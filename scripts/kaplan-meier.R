@@ -54,18 +54,26 @@ plot(cr,
 # sf.p.pji <- survfit(se.p ~ status, data = dtmin)
 
 # sf.adj <- 
+sf.1 <- survfit(se ~ 1, dtmin)
+sf.sex <- survfit(se ~ sex, dtmin) # p = 0.32
+sf.sirs <- survfit(se ~ sirs, dtmin) # p = 0.038
+sf.comp <- survfit(se ~ comp, dtmin) # p = 0.013
+sf.joint <- survfit(se ~ joint, dtmin) # p = 0.71
+sf.stat.tja <- survfit(se ~ stat.tja, dtmin) # p = < 0.0001
+sf.outcome <- survfit(se ~ outcome, dtmin) # p < 0.0001
+sf.multigerm <- survfit(se ~ multigerm, dtmin) # p = 98
+sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
+sf.status <- survfit(se ~ status, dtmin) # p < 0.0001
 
-# survdiff(se ~ status, dtmin) # p < 0.0001
-survdiff(se ~ sex, dtmin) # p = 0.32
-survdiff(se ~ sirs, dtmin) # p = 0.038
-survdiff(se ~ comp, dtmin) # p = 0.013
-survdiff(se ~ joint, dtmin) # p = 0.71
-survdiff(se ~ stat.tja, dtmin) # p = < 0.0001
-survdiff(se ~ outcome, dtmin) # p < 0.0001
-survdiff(se ~ multigerm, dtmin) # p = 98
-survdiff(se ~ comp.type, dtmin) # p = 0.24
-
-survdiff(se.p ~ status, dtmin) # p < 0.0001
+sd.sex <- survdiff(se ~ sex, dtmin) # p = 0.32
+sd.sirs <- survdiff(se ~ sirs, dtmin) # p = 0.038
+sd.comp <- survdiff(se ~ comp, dtmin) # p = 0.013
+sd.joint <- survdiff(se ~ joint, dtmin) # p = 0.71
+sd.stat.tja <- survdiff(se ~ stat.tja, dtmin) # p = < 0.0001
+sd.outcome <- survdiff(se ~ outcome, dtmin) # p < 0.0001
+sd.multigerm <- survdiff(se ~ multigerm, dtmin) # p = 98
+sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
+sd.status <- survdiff(se ~ status, dtmin) # p < 0.0001
 
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")
@@ -97,16 +105,16 @@ library(gtsummary)
 #                  survfit(formula = Surv(time, status) ~ comp, data = dtmin)
 #                  ), times = c(12, 24)) %>% add_p()
 
-list_sf <- list(survfit(formula = Surv(time, event) ~ 1, data = dtmin),
-                survfit(formula = Surv(time, event) ~ sex, data = dtmin),
-                survfit(formula = Surv(time, event) ~ sirs, data = dtmin),
-                survfit(formula = Surv(time, event) ~ joint, data = dtmin),
-                survfit(formula = Surv(time, event) ~ stat.tja, data = dtmin),
-                survfit(formula = Surv(time, event) ~ outcome, data = dtmin),
-                survfit(formula = Surv(time, event) ~ multigerm, data = dtmin),
-                survfit(formula = Surv(time, event) ~ comp, data = dtmin),
-                survfit(formula = Surv(time, event) ~ comp.type, data = dtmin)
-)
+list_sf <- list(sf.1,
+                sf.sex,
+                sf.sirs,
+                sf.joint,
+                sf.stat.tja,
+                sf.outcome,
+                sf.multigerm,
+                sf.comp,
+                sf.comp.type
+                )
 
 # tbl_survfit(dtmin, y = Surv(time, event), include = c(sex, sirs, joint, stat.tja, outcome, multigerm, comp), times= c(12, 24)) %>% add_p()
 tbl.2.yr <- tbl_survfit(list_sf, times = c(24)) %>% add_p() %>% as_gt()
