@@ -79,10 +79,20 @@ kable(sigs)
 ## Recepção e tratamento dos dados
 
 # Metodologia
+```{r include=FALSE}
+source("scripts/kaplan-meier.R", encoding = 'UTF-8')
+source("scripts/descriptive.R", encoding = 'UTF-8')
+```
 
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
 # Resultados
+
+```{r message=FALSE, warning=FALSE}
+kable(tbl_km)
+```
+
+Table: **Table 1** Survival rates for 2-year.
 
 <!-- # Exceções e Desvios do teste -->
 
@@ -93,3 +103,8 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 # Apêndice
 
+```{r message=FALSE, warning=FALSE}
+tbl.1.2.yr
+```
+
+Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
