@@ -80,8 +80,7 @@ kable(sigs)
 
 # Metodologia
 ```{r include=FALSE}
-source("scripts/kaplan-meier.R", encoding = 'UTF-8')
-source("scripts/descriptive.R", encoding = 'UTF-8')
+source("scripts/results.R", encoding = 'UTF-8')
 ```
 
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
