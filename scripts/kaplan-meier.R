@@ -95,27 +95,3 @@ ggsurvplot(survfit(se ~ status, dtmin), dtmin, risk.table = TRUE, surv.median.li
 # library(forestmodel)
 # forest_model(coxph(Surv(time, event) ~ status + age + sex, dtmin))
 # forest_model(coxph(Surv(time, event) ~ status + stat.tja + outcome, dtmin))
-
-library(gtsummary)
-
-## multistate model - competing events
-# tbl_survfit(list(sfm,
-#                  survfit(formula = Surv(time, status) ~ sex, data = dtmin),
-#                  survfit(formula = Surv(time, status) ~ sirs, data = dtmin),
-#                  survfit(formula = Surv(time, status) ~ comp, data = dtmin)
-#                  ), times = c(12, 24)) %>% add_p()
-
-list_sf <- list(sf.1,
-                sf.sex,
-                sf.sirs,
-                sf.joint,
-                sf.stat.tja,
-                sf.outcome,
-                sf.multigerm,
-                sf.comp,
-                sf.comp.type
-                )
-
-# tbl_survfit(dtmin, y = Surv(time, event), include = c(sex, sirs, joint, stat.tja, outcome, multigerm, comp), times= c(12, 24)) %>% add_p()
-tbl.2.yr <- tbl_survfit(list_sf, times = c(24)) %>% add_p()
-tbl.1.2.yr <- tbl_survfit(list_sf, times = c(12, 24)) %>% add_p()
