@@ -35,6 +35,7 @@ ggsurvplot(survfit(se ~ status, dtmin), dtmin, risk.table = TRUE, surv.median.li
 
 # competing risks ---------------------------------------------------------
 
+png("figures/competing-risks.png", width = 600, height = 600)
 plot(cr,
      curvlab = c("Survived", "Other causes of death", "PJI confirmed death"),
      lwd = c(1, 2, 2),
@@ -44,3 +45,4 @@ plot(cr,
      xlab = "Months post PJI diagnosis",
      ylab = "Cumulative incidence"
 )
+dev.off()
