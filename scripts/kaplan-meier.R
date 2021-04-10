@@ -8,9 +8,9 @@ library(survival)
 
 
 se <- Surv(dtmin$time, dtmin$event) # time since PJI
-se.p <- Surv(dtmin$timep, dtmin$event) # time since last procedure
-se.t <- Surv(dtmin$timei, dtmin$event) # time since last TJA # NA: 7
-se.i <- Surv(dtmin$timei, dtmin$event) # time since index # NA: 7
+# se.p <- Surv(dtmin$timep, dtmin$event) # time since last procedure
+# se.t <- Surv(dtmin$timei, dtmin$event) # time since last TJA # NA: 7
+# se.i <- Surv(dtmin$timei, dtmin$event) # time since index # NA: 7
 
 
 # survival objects --------------------------------------------------------
@@ -20,7 +20,7 @@ se.i <- Surv(dtmin$timei, dtmin$event) # time since index # NA: 7
 # sf.p <- survfit(se.p ~ 1, data = dtmin)
 # sf.t <- survfit(se.t ~ 1, data = dtmin)
 # sf.i <- survfit(se.i ~ 1, data = dtmin)
-# 
+
 sf.1 <- survfit(se ~ 1, dtmin)
 sf.sex <- survfit(se ~ sex, dtmin) # p = 0.32
 sf.sirs <- survfit(se ~ sirs, dtmin) # p = 0.038
@@ -53,6 +53,9 @@ sd.outcome <- survdiff(se ~ outcome, dtmin) # p < 0.0001
 sd.multigerm <- survdiff(se ~ multigerm, dtmin) # p = 98
 sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
 sd.status <- survdiff(se ~ status, dtmin) # p < 0.0001
+
+
+# forest plots ------------------------------------------------------------
 
 
 # library(forestmodel)
