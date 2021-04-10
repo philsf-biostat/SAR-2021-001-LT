@@ -19,24 +19,24 @@ output:
   pdf_document:
     number_sections: yes
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_XX_aaaa'
-toc-title: "Sumário"
+subtitle: 'REPORT: analise_dados_LT_2021-v01'
+# toc-title: "Sumário"
 ---
 
 
 
 ---
 
-**Histórico do documento**
+**Document version**
 
 
-|Versão |Alterações     |
-|:------|:--------------|
-|01     |Versão inicial |
+|Version |Alterations     |
+|:-------|:---------------|
+|01      |Initial version |
 
 ---
 
-# Assinaturas
+# Signatures
 
 
 |Papel           |Nome |Função |Assinatura                 |Data          |
@@ -46,20 +46,29 @@ toc-title: "Sumário"
 |Verificado por  |     |       |__________________________ |_____________ |
 |Aprovação final |     |       |__________________________ |_____________ |
 
-# Lista de abreviaturas
+# Abbreviations
 
-# Introdução
+# Introduction
 
-## Objetivos
+## Objectives
 
-## Recepção e tratamento dos dados
+## Data reception and cleaning
 
-# Metodologia
+# Methods
+
 
 
 Esta análise foi realizada utilizando-se o software `R` versão 4.0.5.
 
-# Resultados
+# Results
+
+
+![](../figures/competing-risks.png)
+Fig 1: Mortality due to all causes.
+
+![](../figures/overall.png)
+Fig 2: Mortality confirmed to be caused by PJI.
+
 
 
 |Characteristic                    |2-year survival   |p     |
@@ -102,14 +111,35 @@ Esta análise foi realizada utilizando-se o software `R` versão 4.0.5.
 
 Table: **Table 1** Survival rates for 2-year.
 
-<!-- # Exceções e Desvios do teste -->
+# Exceptions and Observations
 
-# Conclusões
+# Conclusions
 
 
-# Referências
+# Referecens
 
-# Apêndice
+# Appendix
+
+![](../figures/sex.png)
+Fig 3: Mortality by sex.
+
+![](../figures/sirs.png)
+Fig 4: Mortality by SIRS.
+
+![](../figures/joint.png)
+Fig 5: Mortality by joint.
+
+![](../figures/status.png)
+Fig 6: mortality by status of the TJA.
+
+![](../figures/result.png)
+Fig 7: Mortality by surgery outcome.
+
+![](../figures/complication.png)
+Fig 8: Mortality under presence of surgical complication.
+
+![](../figures/type.png)
+Fig 9: Mortality by complication type.
 
 
 
