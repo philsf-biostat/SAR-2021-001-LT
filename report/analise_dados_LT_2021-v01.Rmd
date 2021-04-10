@@ -19,8 +19,8 @@ output:
   pdf_document:
     number_sections: yes
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_XX_aaaa'
-toc-title: "Sumário"
+subtitle: 'REPORT: analise_dados_LT_2021-v01'
+# toc-title: "Sumário"
 ---
 
 ```{r setup, include=FALSE}
@@ -34,20 +34,20 @@ library(philsfmisc)
 
 ---
 
-**Histórico do documento**
+**Document version**
 
 ```{r, echo = FALSE}
 Version <- c("01")
-Changes <- c("Versão inicial")
+Changes <- c("Initial version")
 history <- cbind(Version, Changes)
-colnames(history) <- c("Versão", "Alterações")
+colnames(history) <- c("Version", "Alterations")
 # pander(history, split.cells = 70)
 kable(history)
 ```
 
 ---
 
-# Assinaturas
+# Signatures
 
 ```{r, echo=FALSE}
 sig.field <- "__________________________"
@@ -70,22 +70,23 @@ colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data")
 kable(sigs)
 ```
 
-# Lista de abreviaturas
+# Abbreviations
 
-# Introdução
+# Introduction
 
-## Objetivos
+## Objectives
 
-## Recepção e tratamento dos dados
+## Data reception and cleaning
 
-# Metodologia
+# Methods
+
 ```{r include=FALSE}
 source("scripts/results.R", encoding = 'UTF-8')
 ```
 
 Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
 
-# Resultados
+# Results
 
 
 ![](../figures/competing-risks.png)
@@ -101,14 +102,14 @@ kable(tbl_km)
 
 Table: **Table 1** Survival rates for 2-year.
 
-<!-- # Exceções e Desvios do teste -->
+# Exceptions and Observations
 
-# Conclusões
+# Conclusions
 
 
-# Referências
+# Referecens
 
-# Apêndice
+# Appendix
 
 ![](../figures/sex.png)
 Fig 3: Mortality by sex.
