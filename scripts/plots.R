@@ -19,19 +19,6 @@ ggsave("figures/type.png")
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")
 
-library(survminer)
-ggsurvplot(survfit(se ~ 1, dtmin), dtmin)
-# ggsurvplot(survfit(se ~ status, dtmin), dtmin, pval = TRUE, pval.coord = c(70, 0.10)) + ggtitle("Mortality confirmed to PJI") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ sex, dtmin), dtmin, pval = TRUE) + ggtitle("Survival by sex") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ sirs, dtmin), dtmin, pval = TRUE) + ggtitle("Survival by Confirmed SIRS") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ comp, dtmin), dtmin, pval = TRUE) + ggtitle("Survival given complications") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ joint, dtmin), dtmin, pval = TRUE) + ggtitle("Survival by operated joint") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ stat.tja, dtmin), dtmin, pval = TRUE) + ggtitle("Survival by success of TJA") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ outcome, dtmin), dtmin, pval = TRUE) + ggtitle("Survival by surgery outcome") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ multigerm, dtmin), dtmin, pval = TRUE) + ggtitle("Survival in the presence of multigerm infection") + xlab("Time (months)")
-ggsurvplot(survfit(se ~ comp.type, dtmin), dtmin, pval = TRUE) + ggtitle("Survival by type of complication") + xlab("Time (months)")
-
-ggsurvplot(survfit(se ~ status, dtmin), dtmin, risk.table = TRUE, surv.median.line = "hv", pval = TRUE, pval.coord = c(75, 0.10), pval.size = pval.size) + ggtitle("Survival confirmed to PJI") + xlab("Time (months)")
 
 # competing risks ---------------------------------------------------------
 
