@@ -1,3 +1,5 @@
+# setup -------------------------------------------------------------------
+
 source('scripts/input.R', encoding = 'UTF-8')
 library(tidyr)
 
@@ -7,6 +9,8 @@ pval.size <- 3
 t_unit <- "months"
 
 duration(fivenum(dtmin$time), units = t_unit)
+
+# survival tables ---------------------------------------------------------
 
 library(gtsummary)
 
@@ -31,6 +35,8 @@ list_sf <- list(sf.1,
 # tbl_survfit(dtmin, y = Surv(time, event), include = c(sex, sirs, joint, stat.tja, outcome, multigerm, comp), times= c(12, 24)) %>% add_p()
 tbl.2.yr <- tbl_survfit(list_sf, times = c(24)) %>% add_p()
 tbl.1.2.yr <- tbl_survfit(list_sf, times = c(12, 24)) %>% add_p()
+
+# report tables -----------------------------------------------------------
 
 tbl_km <- tbl.2.yr$table_body %>% select(
   Characteristic = "label",

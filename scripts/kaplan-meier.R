@@ -1,6 +1,11 @@
-library(survival)
+# setup -------------------------------------------------------------------
 
 source('scripts/input.R', encoding = 'UTF-8')
+library(survival)
+
+
+# Surv --------------------------------------------------------------------
+
 
 se <- Surv(dtmin$time, dtmin$event) # time since PJI
 se.p <- Surv(dtmin$timep, dtmin$event) # time since last procedure
@@ -8,22 +13,14 @@ se.t <- Surv(dtmin$timei, dtmin$event) # time since last TJA # NA: 7
 se.i <- Surv(dtmin$timei, dtmin$event) # time since index # NA: 7
 
 
-sf <- survfit(se ~ 1, data = dtmin)
-sf.p <- survfit(se.p ~ 1, data = dtmin)
-sf.t <- survfit(se.t ~ 1, data = dtmin)
-sf.i <- survfit(se.i ~ 1, data = dtmin)
-sfm <- survfit(Surv(time, status) ~ 1, data = dtmin)
+# survival objects --------------------------------------------------------
 
-# plot(sf, ylim = c(0, .8))
 
-library(cmprsk)
-
-cr <- with(dtmin, cuminc(time, status))
-
-# sf.pji <- survfit(se ~ status, data = dtmin)
-# sf.p.pji <- survfit(se.p ~ status, data = dtmin)
-
-# sf.adj <- 
+# sf <- survfit(se ~ 1, data = dtmin)
+# sf.p <- survfit(se.p ~ 1, data = dtmin)
+# sf.t <- survfit(se.t ~ 1, data = dtmin)
+# sf.i <- survfit(se.i ~ 1, data = dtmin)
+# 
 sf.1 <- survfit(se ~ 1, dtmin)
 sf.sex <- survfit(se ~ sex, dtmin) # p = 0.32
 sf.sirs <- survfit(se ~ sirs, dtmin) # p = 0.038
@@ -34,6 +31,18 @@ sf.outcome <- survfit(se ~ outcome, dtmin) # p < 0.0001
 sf.multigerm <- survfit(se ~ multigerm, dtmin) # p = 98
 sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
 sf.status <- survfit(se ~ status, dtmin) # p < 0.0001
+
+# competing risks ---------------------------------------------------------
+
+sfm <- survfit(Surv(time, status) ~ 1, data = dtmin)
+
+library(cmprsk)
+
+cr <- with(dtmin, cuminc(time, status))
+
+
+# survival diffs ----------------------------------------------------------
+
 
 sd.sex <- survdiff(se ~ sex, dtmin) # p = 0.32
 sd.sirs <- survdiff(se ~ sirs, dtmin) # p = 0.038

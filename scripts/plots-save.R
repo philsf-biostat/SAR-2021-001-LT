@@ -1,7 +1,14 @@
+# setup -------------------------------------------------------------------
+
+
+# main figure -------------------------------------------------------------
+
 ggsave(filename = "figures/overall.png",
        plot = print(gg.overal),
        width = 7, height = 7
        )
+
+# additional figures ------------------------------------------------------
 
 ggsave(
   filename = "figures/sex.png",

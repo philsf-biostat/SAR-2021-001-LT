@@ -1,9 +1,15 @@
+# setup -------------------------------------------------------------------
+
 library(survminer)
+
+# main figure -------------------------------------------------------------
 
 gg.overal <- ggsurvplot(
   survfit(se ~ 1, dtmin),
   dtmin
   )
+
+# additional figures ------------------------------------------------------
 
 gg.sex <- ggsurvplot(
   survfit(se ~ sex, dtmin),
