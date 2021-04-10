@@ -9,11 +9,10 @@ pval.coord <- c(150, 0.10)
 
 gg.overal <- ggsurvplot(
   survfit(se ~ 1, dtmin),
-  dtmin
+  dtmin, risk.table = TRUE
   ) +
   ggtitle(
-    label = "Overall survival PJI confirmed death after TJA",
-    subtitle = "Considering PJI lab-confirmed deaths"
+    label = "Deaths caused by PJI after TJA",
     ) +
   xlab(xlabel)
 
