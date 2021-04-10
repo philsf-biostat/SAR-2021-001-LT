@@ -87,6 +87,14 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 # Resultados
 
+
+![](../figures/competing-risks.png)
+Fig 1: Mortality due to all causes.
+
+![](../figures/overall.png)
+Fig 2: Mortality confirmed to be caused by PJI.
+
+
 ```{r message=FALSE, warning=FALSE}
 kable(tbl_km)
 ```
@@ -101,6 +109,27 @@ Table: **Table 1** Survival rates for 2-year.
 # Referências
 
 # Apêndice
+
+![](../figures/sex.png)
+Fig 3: Mortality by sex.
+
+![](../figures/sirs.png)
+Fig 4: Mortality by SIRS.
+
+![](../figures/joint.png)
+Fig 5: Mortality by joint.
+
+![](../figures/status.png)
+Fig 6: mortality by status of the TJA.
+
+![](../figures/result.png)
+Fig 7: Mortality by surgery outcome.
+
+![](../figures/complication.png)
+Fig 8: Mortality under presence of surgical complication.
+
+![](../figures/type.png)
+Fig 9: Mortality by complication type.
 
 ```{r message=FALSE, warning=FALSE}
 # tbl.1.2.yr
