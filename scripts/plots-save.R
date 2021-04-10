@@ -21,7 +21,7 @@ ggsave(
 
 ggsave(
   filename = "figures/sirs.png",
-  device = print(gg.sirs),
+  plot = print(gg.sirs),
   width = width, height = height
   )
 
