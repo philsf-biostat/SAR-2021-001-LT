@@ -79,8 +79,8 @@ gg.comp.type <- ggsurvplot(
 # competing risks ---------------------------------------------------------
 
 gg.cr <- ggcompetingrisks(
-  cr,
-  # sfm,
+  # cr,
+  sfm,
   # conf.int = TRUE,
   multiple_panels = FALSE
   ) +
