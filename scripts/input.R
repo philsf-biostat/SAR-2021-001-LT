@@ -6,6 +6,8 @@ dt.raw <- data.table(dt.raw)
 # KM vars -----------------------------------------------------------------
 
 # deaths
+# EVENT is death confirmed caused by PJI (KM)
+# STATUS is any death (CR)
 dt.raw$event <- as.numeric(NA)
 dt.raw$status <- factor(NA, levels = c("Survive", "PJI", "Other"))
 
