@@ -95,7 +95,7 @@ Fig 1: Mortality due to all causes.
 Fig 2: Mortality confirmed to be caused by PJI.
 
 
-```{r message=FALSE, warning=FALSE}
+```{r tab1, message=FALSE, warning=FALSE}
 kable(tbl_km)
 ```
 
@@ -131,7 +131,7 @@ Fig 8: Mortality under presence of surgical complication.
 ![](../figures/type.png)
 Fig 9: Mortality by complication type.
 
-```{r message=FALSE, warning=FALSE}
+```{r tab2, message=FALSE, warning=FALSE}
 # tbl.1.2.yr
 ```
 
