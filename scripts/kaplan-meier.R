@@ -16,26 +16,6 @@ sfm <- survfit(Surv(time, status) ~ 1, data = dtmin)
 
 # plot(sf, ylim = c(0, .8))
 
-plot(sfm,
-     col = 2:3,
-     lty = 1:2,
-     lwd = c(2, 1.5),
-     # xscale = 12,
-     main = "Competing risks of death after TJA",
-     ylim = c(0, .8),
-     xlab = "Months post PJI diagnosis",
-     ylab = "Cumulative incidence"
-     )
-legend(
-  0, .5,
-  c("PJI confirmed death", "Other causes of death"),
-  col = 2:3,
-  lty = 1:2,
-  lwd = c(2, 1.5),
-  # title = "Competing risks",
-  bty = "n"
-)
-
 library(cmprsk)
 
 cr <- with(dtmin, cuminc(time, status))
