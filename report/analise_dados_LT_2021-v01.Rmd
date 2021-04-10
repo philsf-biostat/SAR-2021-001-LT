@@ -80,7 +80,7 @@ kable(sigs)
 
 # Methods
 
-```{r include=FALSE}
+```{r analysis, include=FALSE}
 source("scripts/results.R", encoding = 'UTF-8')
 ```
 
