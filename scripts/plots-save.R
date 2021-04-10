@@ -1,11 +1,14 @@
 # setup -------------------------------------------------------------------
 
+width <- 7
+height <- 7
+
 
 # main figure -------------------------------------------------------------
 
 ggsave(filename = "figures/overall.png",
        plot = print(gg.overal),
-       width = 7, height = 7
+       width = width, height = height
        )
 
 # additional figures ------------------------------------------------------
@@ -13,43 +16,43 @@ ggsave(filename = "figures/overall.png",
 ggsave(
   filename = "figures/sex.png",
   plot = print(gg.sex),
-  width = 7, height = 7
+  width = width, height = height
   )
 
 ggsave(
   filename = "figures/sirs.png",
   device = print(gg.sirs),
-  width = 7, height = 7
+  width = width, height = height
   )
 
 ggsave(
   filename = "figures/complication.png",
   plot = print(gg.comp),
-  width = 7, height = 7
+  width = width, height = height
   )
 
 ggsave(
   filename = "figures/joint.png",
   plot = print(gg.joint),
-  width = 7, height = 7
+  width = width, height = height
   )
 
 ggsave(
   filename = "figures/status.png",
   plot = print(gg.stat.tja),
-  width = 7, height = 7
+  width = width, height = height
 )
 
 ggsave(
   filename = "figures/result.png",
   plot = print(gg.outcome),
-  width = 7, height = 7
+  width = width, height = height
   )
 
 ggsave(
   filename = "figures/type.png",
   plot = print(gg.comp.type),
-  width = 7, height = 7
+  width = width, height = height
   )
 
 # competing risks ---------------------------------------------------------
@@ -57,7 +60,7 @@ ggsave(
 ggsave(
   filename = "figures/competing-risks.png",
   plot = print(gg.cr),
-  width = 7, height = 7
+  width = width, height = height
 )
 
 # png("figures/competing-risks.png", width = 600, height = 600)
