@@ -47,14 +47,21 @@ ggsave(
 
 # competing risks ---------------------------------------------------------
 
-png("figures/competing-risks.png", width = 600, height = 600)
-plot(cr,
-     curvlab = c("Survived", "Other causes of death", "PJI confirmed death"),
-     lwd = c(1, 2, 2),
-     col = c(1, 3, 2),
-     lty = 3:1,
-     main = "Competing risks of death after TJA",
-     xlab = "Months post PJI diagnosis",
-     ylab = "Cumulative incidence"
+ggsave(
+  filename = "figures/competing-risks.png",
+  plot = print(gg.cr),
+  width = 7, height = 7
 )
-dev.off()
+
+# png("figures/competing-risks.png", width = 600, height = 600)
+# plot(cr,
+#      curvlab = c("Survived", "Other causes of death", "PJI confirmed death"),
+#      lwd = c(1, 2, 2),
+#      col = c(1, 3, 2),
+#      lty = 3:1,
+#      main = "Competing risks of death after TJA",
+#      xlab = "Months post PJI diagnosis",
+#      ylab = "Cumulative incidence"
+# )
+# dev.off()
+

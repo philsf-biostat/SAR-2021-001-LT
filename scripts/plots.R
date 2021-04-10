@@ -63,3 +63,14 @@ gg.comp.type <- ggsurvplot(
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")
 
+# competing risks ---------------------------------------------------------
+
+gg.cr <- ggcompetingrisks(
+  cr,
+  # sfm,
+  # conf.int = TRUE,
+  multiple_panels = FALSE
+  ) +
+  ggtitle("Competing risks for causes of death after TJA") +
+  xlab("Time (months)")
+
