@@ -82,7 +82,7 @@ kable(history)
 
 ## Objectives
 
-Perform a Kaplan-Meier survival analyses on the deaths caused by PJI after a TJA surgical procedure.
+Perform a Kaplan-Meier survival analysis on the deaths caused by PJI after a TJA surgical procedure.
 Additionally, explore possible risk factor for PJI mortality in bi-variate analyses.
 
 ## Data reception and cleaning
@@ -98,7 +98,7 @@ Additionally, explore possible risk factor for PJI mortality in bi-variate analy
 1. surgery type; categorical
 1. multi-germ infection; binary
 1. complication; binary
-1. time (date PJI diagnosis -- date last followup)
+1. time (date PJI diagnosis -- date last follow up)
 1. event (death due to PJI)
 1. death (all causes)
 
@@ -121,7 +121,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 The event of interest for this analysis is death caused by the PJI.
 For the main analysis patients that died from other causes were censored.
-The time to event was defined as the number of years between the diagnosis of PJI and the last follow-up noted.
+The time to event was defined as the number of years between the diagnosis of PJI and the last follow up noted.
 
 There were multiple outcomes to consider regarding the mortality in PJI patients.
 These causes were categorized as being caused by PJI (event of interest), other causes of death and survival (censored).
@@ -158,7 +158,7 @@ Packages used for survival analyses were `survival` version `r packageVersion("s
 - sex: males: 21 (39%), females: 33 (61%)
 - age: min = 32, max = 88
 - median age: 67 years (IQR: 60 -- 70)
-- followup time: min = 4 days, max = 16.35 years
+- follow up time: min = 4 days, max = 16.35 years
 
 ## Mortality
 
