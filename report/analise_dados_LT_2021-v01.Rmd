@@ -1,5 +1,5 @@
 ---
-title: "Análise Estatística de ..."
+title: "Survival analysis of events attributed to PJI in patients that undergone TJA surgeries"
 author: '**De:** Felipe Figueiredo **Para:** ___'
 date: '**Data: ** dd/mm/aaaa'
 output:
