@@ -46,7 +46,7 @@ dtmin <- dt.raw[, .(
   comp.type=factor(`TYPE Complication`),
   sirs=factor(SIRS),
   joint=factor(`Joint komb.`),
-  outcome=factor(`Results Joint`),
+  surg.type=factor(`Results Joint`),
   multigerm=MULTIGERM,
   surg.success=factor(`Success/Failure TJA`)
   )]

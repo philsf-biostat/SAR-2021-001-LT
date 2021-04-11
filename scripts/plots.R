@@ -58,12 +58,12 @@ gg.surg.success <- ggsurvplot(
   ggtitle("Survival by surgery success") +
   xlab(xlabel)
 
-gg.outcome <- ggsurvplot(
-  survfit(se ~ outcome, dtmin),
+gg.surg.type <- ggsurvplot(
+  survfit(se ~ surg.type, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by surgery outcome") +
+  ggtitle("Survival by surgery type") +
   xlab(xlabel)
 
 gg.comp.type <- ggsurvplot(

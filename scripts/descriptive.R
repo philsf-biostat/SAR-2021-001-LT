@@ -26,13 +26,13 @@ list_sf <- list(sf.1,
                 sf.sirs,
                 sf.joint,
                 sf.surg.success,
-                sf.outcome,
+                sf.surg.type,
                 sf.multigerm,
                 sf.comp,
                 sf.comp.type
 )
 
-# tbl_survfit(dtmin, y = Surv(time, event), include = c(sex, sirs, joint, surg.success, outcome, multigerm, comp), times= c(12, 24)) %>% add_p()
+# tbl_survfit(dtmin, y = Surv(time, event), include = c(sex, sirs, joint, surg.success, surg.type, multigerm, comp), times= c(12, 24)) %>% add_p()
 tbl.2.yr <- tbl_survfit(list_sf, times = c(24)) %>% add_p()
 tbl.1.2.yr <- tbl_survfit(list_sf, times = c(12, 24)) %>% add_p()
 

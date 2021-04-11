@@ -100,7 +100,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |surg.success                      |                  |0.060 |
 |failure                           |84% (67%, 100%)   |      |
 |success                           |100% (100%, 100%) |      |
-|outcome                           |                  |0.002 |
+|surg.type                         |                  |0.002 |
 |Amputation                        |— (—, —)          |      |
 |Arthrodesis                       |100% (100%, 100%) |      |
 |Exarticulation                    |100% (100%, 100%) |      |

@@ -45,7 +45,7 @@ ggsave(
 
 ggsave(
   filename = "figures/result.png",
-  plot = print(gg.outcome),
+  plot = print(gg.surg.type),
   width = width, height = height
   )
 
