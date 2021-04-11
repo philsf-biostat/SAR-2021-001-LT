@@ -4,7 +4,7 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 
 ## Analyses performed
 
-1. Analysis ([Planning][proj-v01])
+1. Kaplan-Meier Analysis ([Planning][proj-v01])
 <!-- 2. yyy ([Planejamento][proj-yyy]) -->
 <!-- 3. zzz ([Planejamento][proj-zzz]) -->
 
@@ -16,12 +16,12 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 
 [Ver as etapas desta análise][releases].
 
-**Versão 01 - xxx** - [Em elaboração][milestone-prequal].
+**Version 01** - [Ongoing][milestone-prequal].
 
 [Planejamento][v01-project].
 
-- [Visualização online][reportviz-v01]
-- [Download][docx-v01]
+- [Online visualization][reportviz-v01]
+- [Download][pdf-v01]
 
 <!-- **Versão 02 - Defesa** - [Em elaboração][milestone-posqual]. -->
 
@@ -32,9 +32,10 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 
 [releases]: https://github.com/philsf-biostat/xxx/releases/
 [milestone-prequal]: https://github.com/philsf-biostat/xxx/milestone/xxx
-[reportviz-v01]: report/xxx-v01.md
-[docx-v01]: report/xxx-v01.docx?raw=true
-[v01-project]: https://github.com/philsf-biostat/xxx/projects/xxx
+[reportviz-v01]: report/analise_dados_LT_2021-v01.md
+[docx-v01]: report/analise_dados_LT_2021-v01.docx?raw=true
+[pdf-v01]: report/analise_dados_LT_2021-v01.pdf?raw=true
+[v01-project]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/1
 
 <!-- [milestone-posqual]: https://github.com/philsf-biostat/xxx/milestone/xxx -->
 <!-- [reportviz-v02]: report/xxx-v02.md -->
