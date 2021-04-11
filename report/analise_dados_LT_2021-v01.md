@@ -171,6 +171,11 @@ All deaths attributed to PJI occurred before the deaths unrelated.
 ![](../figures/death_all.png)
 **Figure 1** Mortality due to all causes.
 
+Fig 2 shows the Kaplan-Meier estimate of the mortality rate attributed to PJI.
+Times of death ranged from 4 days to 2.13 years.
+The survival rate at the end of study follow up was 89.7% so the median time of survival could not be estimated.
+The 1-year survival rate was estimated as 96% (91% -- 100%) and the 2-year survival rate was estimated as 92% (85% -- 100%).
+
 ![](../figures/death_PJI.png)
 **Figure 2** Mortality confirmed to be caused by PJI.
 
