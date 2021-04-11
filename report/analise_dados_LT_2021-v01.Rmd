@@ -30,6 +30,8 @@ options(scipen = 999)
 library(pander)
 library(knitr)
 library(philsfmisc)
+panderOptions('table.style', 'rmarkdown')
+panderOptions('table.split.table', Inf)
 ```
 
 ---
@@ -216,6 +218,8 @@ Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
 
 ## Analytical dataset
 
+Due to confidentiality the dataset used in this analysis cannot be shared online in the public version of this report.
+
 ```{r data}
-kable(dtmin)
+# pander(dtmin)
 ```

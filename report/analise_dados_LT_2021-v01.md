@@ -252,3 +252,9 @@ Fig 8: Mortality under presence of surgical complication.
 |Y              |92% (81%, 100%)   |82% (68%, 100%)   |      |
 
 Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
+
+## Analytical dataset
+
+Due to confidentiality the dataset used in this analysis cannot be shared online in the public version of this report.
+
+
