@@ -5,20 +5,20 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 ## Analyses performed
 
 1. Kaplan-Meier Analysis ([Planning][proj-v01])
-<!-- 2. yyy ([Planejamento][proj-yyy]) -->
-<!-- 3. zzz ([Planejamento][proj-zzz]) -->
+<!-- 2. yyy ([Planning][proj-yyy]) -->
+<!-- 3. zzz ([Planning][proj-zzz]) -->
 
 [proj-v01]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/1
 [proj-yyy]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/yyy
 [proj-zzz]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/zzz
 
-## Relatório da análise de dados
+## Analysis report
 
-[Ver as etapas desta análise][releases].
+[View the releases][releases].
 
 **Version 01** - [Ongoing][milestone-v01].
 
-[Planejamento][v01-project].
+[Planning][v01-project].
 
 - [Online visualization][reportviz-v01]
 - Download
