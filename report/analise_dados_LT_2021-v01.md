@@ -184,6 +184,8 @@ It is noticeable that, while this analysis does not give proof that there is a s
 
 ## 2-year survival rates
 
+Table 1 shows the 2-year survival rates across all covariates considered.
+In this sample surgical complications decreased the survival, and most events were related to the procedure of Spacer, where the median time of survival was 3.14 weeks.
 
 | Characteristic |  2-year survival  |   p   |
 |:--------------:|:-----------------:|:-----:|
