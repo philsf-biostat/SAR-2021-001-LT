@@ -110,7 +110,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |multigerm                         |                  |0.938 |
 |N                                 |92% (84%, 100%)   |      |
 |Y                                 |92% (77%, 100%)   |      |
-|comp                              |                  |0.038 |
+|complication                      |                  |0.038 |
 |N                                 |100% (100%, 100%) |      |
 |Y                                 |82% (68%, 100%)   |      |
 |comp.type                         |                  |0.144 |

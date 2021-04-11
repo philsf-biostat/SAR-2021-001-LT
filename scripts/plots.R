@@ -34,8 +34,8 @@ gg.sirs <- ggsurvplot(
   ggtitle("Survival by Confirmed SIRS") +
   xlab(xlabel)
 
-gg.comp <- ggsurvplot(
-  survfit(se ~ comp, dtmin),
+gg.complication <- ggsurvplot(
+  survfit(se ~ complication, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
