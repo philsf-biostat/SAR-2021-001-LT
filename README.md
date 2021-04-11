@@ -16,6 +16,14 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 
 [View the releases][releases].
 
+<!-- **Version 02** - [Ongoing][milestone-v02]. -->
+
+<!-- [Planning][v02-project]. -->
+
+<!-- - [Online visualization][reportviz-v02] -->
+<!-- - Download -->
+<!-- <\!-- - [Download][pdf-v02] -\-> -->
+
 **Version 01** - [Ongoing][milestone-v01].
 
 [Planning][v01-project].
@@ -23,14 +31,6 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 - [Online visualization][reportviz-v01]
 - Download
 <!-- - [Download][pdf-v01] -->
-
-**Version 02** - [Ongoing][milestone-v02].
-
-[Planning][v02-project].
-
-- [Online visualization][reportviz-v02]
-- Download
-<!-- - [Download][pdf-v02] -->
 
 [releases]: https://github.com/philsf-biostat/analise_dados_LT_2021/releases/
 [milestone-v01]: https://github.com/philsf-biostat/analise_dados_LT_2021/milestone/1
