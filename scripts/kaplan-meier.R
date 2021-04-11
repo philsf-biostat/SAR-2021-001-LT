@@ -24,21 +24,20 @@ se <- Surv(dtmin$time, dtmin$event) # time since PJI
 sf.1 <- survfit(se ~ 1, dtmin)
 sf.sex <- survfit(se ~ sex, dtmin) # p = 0.32
 sf.sirs <- survfit(se ~ sirs, dtmin) # p = 0.038
-sf.comp <- survfit(se ~ comp, dtmin) # p = 0.013
+sf.complication <- survfit(se ~ complication, dtmin) # p = 0.013
 sf.joint <- survfit(se ~ joint, dtmin) # p = 0.71
-sf.stat.tja <- survfit(se ~ stat.tja, dtmin) # p = < 0.0001
-sf.outcome <- survfit(se ~ outcome, dtmin) # p < 0.0001
+sf.surg.success <- survfit(se ~ surg.success, dtmin) # p = < 0.0001
+sf.surg.type <- survfit(se ~ surg.type, dtmin) # p < 0.0001
 sf.multigerm <- survfit(se ~ multigerm, dtmin) # p = 98
-sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
-sf.status <- survfit(se ~ status, dtmin) # p < 0.0001
+# sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
 
 # competing risks ---------------------------------------------------------
 
-sfm <- survfit(Surv(time, status) ~ 1, data = dtmin)
+sfm <- survfit(Surv(time, death) ~ 1, data = dtmin)
 
 library(cmprsk)
 
-cr <- with(dtmin, cuminc(time, status))
+cr <- with(dtmin, cuminc(time, death))
 
 
 # survival diffs ----------------------------------------------------------
@@ -46,18 +45,17 @@ cr <- with(dtmin, cuminc(time, status))
 
 sd.sex <- survdiff(se ~ sex, dtmin) # p = 0.32
 sd.sirs <- survdiff(se ~ sirs, dtmin) # p = 0.038
-sd.comp <- survdiff(se ~ comp, dtmin) # p = 0.013
+sd.complication <- survdiff(se ~ complication, dtmin) # p = 0.013
 sd.joint <- survdiff(se ~ joint, dtmin) # p = 0.71
-sd.stat.tja <- survdiff(se ~ stat.tja, dtmin) # p = < 0.0001
-sd.outcome <- survdiff(se ~ outcome, dtmin) # p < 0.0001
+sd.surg.success <- survdiff(se ~ surg.success, dtmin) # p = < 0.0001
+sd.surg.type <- survdiff(se ~ surg.type, dtmin) # p < 0.0001
 sd.multigerm <- survdiff(se ~ multigerm, dtmin) # p = 98
-sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
-sd.status <- survdiff(se ~ status, dtmin) # p < 0.0001
+# sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
 
 
 # forest plots ------------------------------------------------------------
 
 
 # library(forestmodel)
-# forest_model(coxph(Surv(time, event) ~ status + age + sex, dtmin))
-# forest_model(coxph(Surv(time, event) ~ status + stat.tja + outcome, dtmin))
+# forest_model(coxph(Surv(time, event) ~ death + age + sex, dtmin))
+# forest_model(coxph(Surv(time, event) ~ death + surg.success + surg.type, dtmin))
