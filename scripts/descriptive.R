@@ -23,12 +23,12 @@ library(gtsummary)
 
 list_sf <- list(sf.1,
                 sf.Sex,
-                sf.SIRS,
                 sf.Joint,
-                sf.surg.success,
-                sf.surg.type,
+                sf.Complication,
+                sf.SIRS,
                 sf.Multigerm,
-                sf.Complication
+                sf.surg.success,
+                sf.surg.type
                 # sf.comp.type
 )
 

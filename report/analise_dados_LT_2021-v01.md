@@ -77,18 +77,18 @@ Additionally, explore possible risk factor for PJI mortality in bi-variate analy
 
 **Analytical data-set**
 
-1. id
-1. age; continuous
-1. sex; binary
-1. sirs; binary
-1. joint; binary
-1. surgery success; binary
-1. surgery type; categorical
-1. multi-germ infection; binary
-1. complication; binary
+1. ID
+1. Age; continuous
+1. Sex; binary
 1. time (date PJI diagnosis -- date last follow up)
 1. event (death due to PJI)
 1. death (all causes)
+1. Joint; binary
+1. SIRS; binary
+1. Multi-germ infection; binary
+1. Complication; binary
+1. Surgery type; categorical
+1. Surgery success; binary
 
 Obs: Complication Type was considered for analysis, but could not be safely converted to a categorical variable.
 It was dropped.
@@ -116,13 +116,13 @@ The follow up time of all participants was considered in the person-year at risk
 
 ### Covariates
 
-- sex; binary
-- sirs; binary
-- joint; binary
-- surgery success; binary
-- surgery type; categorical
-- multi-germ infection; binary
-- complication; binary
+- Sex; binary
+- Joint; binary
+- Complication; binary
+- SIRS; binary
+- Multi-germ infection; binary
+- Surgery success; binary
+- Surgery type; categorical
 
 ## Statistical analyses
 
@@ -175,12 +175,18 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |      Sex       |                   | 0.275 |
 |       F        |  93% (85%, 100%)  |       |
 |       M        |  90% (79%, 100%)  |       |
-|      SIRS      |                   | 0.056 |
-|       N        |  97% (92%, 100%)  |       |
-|       Y        |  77% (57%, 100%)  |       |
 |     Joint      |                   | 0.703 |
 |      Hip       |  92% (83%, 100%)  |       |
 |      Knee      |  92% (82%, 100%)  |       |
+|  Complication  |                   | 0.038 |
+|       N        | 100% (100%, 100%) |       |
+|       Y        |  82% (68%, 100%)  |       |
+|      SIRS      |                   | 0.056 |
+|       N        |  97% (92%, 100%)  |       |
+|       Y        |  77% (57%, 100%)  |       |
+|   Multigerm    |                   | 0.938 |
+|       N        |  92% (84%, 100%)  |       |
+|       Y        |  92% (77%, 100%)  |       |
 |  surg.success  |                   | 0.060 |
 |    Failure     |  84% (67%, 100%)  |       |
 |    Success     | 100% (100%, 100%) |       |
@@ -191,12 +197,6 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |  Girdlestone   |  67% (30%, 100%)  |       |
 |     Spacer     |  50% (19%, 100%)  |       |
 |      TJA       |  97% (93%, 100%)  |       |
-|   Multigerm    |                   | 0.938 |
-|       N        |  92% (84%, 100%)  |       |
-|       Y        |  92% (77%, 100%)  |       |
-|  Complication  |                   | 0.038 |
-|       N        | 100% (100%, 100%) |       |
-|       Y        |  82% (68%, 100%)  |       |
 
 Table: **Table 1** Survival rates for 2-year.
 
@@ -216,25 +216,27 @@ Table: **Table 1** Survival rates for 2-year.
 <!-- ``` -->
 
 ![](../figures/Sex.png)
-Fig 3: Mortality by Sex.
-
-![](../figures/SIRS.png)
-Fig 4: Mortality by SIRS.
+Figure 3: Mortality by Sex.
 
 ![](../figures/Joint.png)
-Fig 5: Mortality by joint.
-
-![](../figures/surg_success.png)
-Fig 6: mortality by status of the TJA.
-
-![](../figures/surg_type.png)
-Fig 7: Mortality by surgery outcome.
+Figure 4: Mortality by joint.
 
 ![](../figures/Complication.png)
-Fig 8: Mortality under presence of surgical complication.
+Figure 5: Mortality under presence of surgical complication.
 
 ![](../figures/Multigerm.png)
-Fig 9: Mortality by Multigerm.
+Figure 6: Mortality by Multi-germ.
+
+![](../figures/SIRS.png)
+Figure 7: Mortality by SIRS.
+
+
+
+![](../figures/surg_success.png)
+Figure 8: mortality by status of the TJA.
+
+![](../figures/surg_type.png)
+Figure 9: Mortality by surgery outcome.
 
 <!-- ![](../figures/comp_type.png) -->
 <!-- Fig 9: Mortality by complication type. -->
@@ -248,12 +250,18 @@ Fig 9: Mortality by Multigerm.
 |      Sex       |                   |                   | 0.275 |
 |       F        | 100% (100%, 100%) |  93% (85%, 100%)  |       |
 |       M        |  90% (79%, 100%)  |  90% (79%, 100%)  |       |
-|      SIRS      |                   |                   | 0.056 |
-|       N        | 100% (100%, 100%) |  97% (92%, 100%)  |       |
-|       Y        |  85% (67%, 100%)  |  77% (57%, 100%)  |       |
 |     Joint      |                   |                   | 0.703 |
 |      Hip       |  96% (89%, 100%)  |  92% (83%, 100%)  |       |
 |      Knee      |  96% (89%, 100%)  |  92% (82%, 100%)  |       |
+|  Complication  |                   |                   | 0.038 |
+|       N        | 100% (100%, 100%) | 100% (100%, 100%) |       |
+|       Y        |  92% (81%, 100%)  |  82% (68%, 100%)  |       |
+|      SIRS      |                   |                   | 0.056 |
+|       N        | 100% (100%, 100%) |  97% (92%, 100%)  |       |
+|       Y        |  85% (67%, 100%)  |  77% (57%, 100%)  |       |
+|   Multigerm    |                   |                   | 0.938 |
+|       N        |  98% (93%, 100%)  |  92% (84%, 100%)  |       |
+|       Y        |  92% (77%, 100%)  |  92% (77%, 100%)  |       |
 |  surg.success  |                   |                   | 0.060 |
 |    Failure     |  93% (80%, 100%)  |  84% (67%, 100%)  |       |
 |    Success     | 100% (100%, 100%) | 100% (100%, 100%) |       |
@@ -264,12 +272,6 @@ Fig 9: Mortality by Multigerm.
 |  Girdlestone   | 100% (100%, 100%) |  67% (30%, 100%)  |       |
 |     Spacer     |  50% (19%, 100%)  |  50% (19%, 100%)  |       |
 |      TJA       | 100% (100%, 100%) |  97% (93%, 100%)  |       |
-|   Multigerm    |                   |                   | 0.938 |
-|       N        |  98% (93%, 100%)  |  92% (84%, 100%)  |       |
-|       Y        |  92% (77%, 100%)  |  92% (77%, 100%)  |       |
-|  Complication  |                   |                   | 0.038 |
-|       N        | 100% (100%, 100%) | 100% (100%, 100%) |       |
-|       Y        |  92% (81%, 100%)  |  82% (68%, 100%)  |       |
 
 Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
 
