@@ -26,8 +26,8 @@ ggsave(
   )
 
 ggsave(
-  filename = "figures/complication.png",
-  plot = print(gg.complication),
+  filename = "figures/Complication.png",
+  plot = print(gg.Complication),
   width = width, height = height
   )
 

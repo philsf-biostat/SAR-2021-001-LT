@@ -219,7 +219,7 @@ Fig 6: mortality by status of the TJA.
 ![](../figures/surg_type.png)
 Fig 7: Mortality by surgery outcome.
 
-![](../figures/complication.png)
+![](../figures/Complication.png)
 Fig 8: Mortality under presence of surgical complication.
 
 <!-- ![](../figures/comp_type.png) -->

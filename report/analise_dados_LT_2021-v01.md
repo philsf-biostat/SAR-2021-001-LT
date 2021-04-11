@@ -194,7 +194,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |   multigerm    |                   | 0.938 |
 |       N        |  92% (84%, 100%)  |       |
 |       Y        |  92% (77%, 100%)  |       |
-|  complication  |                   | 0.038 |
+|  Complication  |                   | 0.038 |
 |       N        | 100% (100%, 100%) |       |
 |       Y        |  82% (68%, 100%)  |       |
 
@@ -230,7 +230,7 @@ Fig 6: mortality by status of the TJA.
 ![](../figures/surg_type.png)
 Fig 7: Mortality by surgery outcome.
 
-![](../figures/complication.png)
+![](../figures/Complication.png)
 Fig 8: Mortality under presence of surgical complication.
 
 <!-- ![](../figures/comp_type.png) -->
@@ -264,7 +264,7 @@ Fig 8: Mortality under presence of surgical complication.
 |   multigerm    |                   |                   | 0.938 |
 |       N        |  98% (93%, 100%)  |  92% (84%, 100%)  |       |
 |       Y        |  92% (77%, 100%)  |  92% (77%, 100%)  |       |
-|  complication  |                   |                   | 0.038 |
+|  Complication  |                   |                   | 0.038 |
 |       N        | 100% (100%, 100%) | 100% (100%, 100%) |       |
 |       Y        |  92% (81%, 100%)  |  82% (68%, 100%)  |       |
 

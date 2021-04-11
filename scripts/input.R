@@ -51,7 +51,7 @@ dtmin <- dt.raw[, .(
   event,
   death,
   joint=factor(`Joint komb.`),
-  complication=factor(COMPLICATION),
+  Complication=factor(COMPLICATION),
   # comp.type=factor(`TYPE Complication`),
   sirs=factor(SIRS),
   multigerm=MULTIGERM,

@@ -34,12 +34,12 @@ gg.sirs <- ggsurvplot(
   ggtitle("Survival by Confirmed SIRS") +
   xlab(xlabel)
 
-gg.complication <- ggsurvplot(
-  survfit(se ~ complication, dtmin),
+gg.Complication <- ggsurvplot(
+  survfit(se ~ Complication, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival given complications") +
+  ggtitle("Survival given Complications") +
   xlab(xlabel)
 
 gg.joint <- ggsurvplot(
@@ -71,7 +71,7 @@ gg.surg.type <- ggsurvplot(
 #   dtmin,
 #   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
 #   ) +
-#   ggtitle("Survival by type of complication") +
+#   ggtitle("Survival by type of Complication") +
 #   xlab(xlabel)
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")
