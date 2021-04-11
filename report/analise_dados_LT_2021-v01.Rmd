@@ -222,6 +222,9 @@ Fig 7: Mortality by surgery outcome.
 ![](../figures/Complication.png)
 Fig 8: Mortality under presence of surgical complication.
 
+![](../figures/Multigerm.png)
+Fig 9: Mortality by Multigerm.
+
 <!-- ![](../figures/comp_type.png) -->
 <!-- Fig 9: Mortality by complication type. -->
 

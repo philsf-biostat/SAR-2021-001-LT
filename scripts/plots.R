@@ -34,6 +34,14 @@ gg.SIRS <- ggsurvplot(
   ggtitle("Survival by Confirmed SIRS") +
   xlab(xlabel)
 
+gg.Multigerm <- ggsurvplot(
+  survfit(se ~ Multigerm, dtmin),
+  dtmin,
+  pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
+) +
+  ggtitle("Survival given multi-germ infection") +
+  xlab(xlabel)
+
 gg.Complication <- ggsurvplot(
   survfit(se ~ Complication, dtmin),
   dtmin,

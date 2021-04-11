@@ -191,7 +191,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |  Girdlestone   |  67% (30%, 100%)  |       |
 |     Spacer     |  50% (19%, 100%)  |       |
 |      TJA       |  97% (93%, 100%)  |       |
-|   multigerm    |                   | 0.938 |
+|   Multigerm    |                   | 0.938 |
 |       N        |  92% (84%, 100%)  |       |
 |       Y        |  92% (77%, 100%)  |       |
 |  Complication  |                   | 0.038 |
@@ -233,6 +233,9 @@ Fig 7: Mortality by surgery outcome.
 ![](../figures/Complication.png)
 Fig 8: Mortality under presence of surgical complication.
 
+![](../figures/Multigerm.png)
+Fig 9: Mortality by Multigerm.
+
 <!-- ![](../figures/comp_type.png) -->
 <!-- Fig 9: Mortality by complication type. -->
 
@@ -261,7 +264,7 @@ Fig 8: Mortality under presence of surgical complication.
 |  Girdlestone   | 100% (100%, 100%) |  67% (30%, 100%)  |       |
 |     Spacer     |  50% (19%, 100%)  |  50% (19%, 100%)  |       |
 |      TJA       | 100% (100%, 100%) |  97% (93%, 100%)  |       |
-|   multigerm    |                   |                   | 0.938 |
+|   Multigerm    |                   |                   | 0.938 |
 |       N        |  98% (93%, 100%)  |  92% (84%, 100%)  |       |
 |       Y        |  92% (77%, 100%)  |  92% (77%, 100%)  |       |
 |  Complication  |                   |                   | 0.038 |

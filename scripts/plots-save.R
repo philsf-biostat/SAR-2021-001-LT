@@ -26,6 +26,12 @@ ggsave(
   )
 
 ggsave(
+  filename = "figures/Multigerm.png",
+  plot = print(gg.Multigerm),
+  width = width, height = height
+)
+
+ggsave(
   filename = "figures/Complication.png",
   plot = print(gg.Complication),
   width = width, height = height
