@@ -72,11 +72,33 @@ kable(history)
 
 # Abbreviations
 
+- PJI:
+- SIRS: systemic inflamtory response
+- TJA:
+
 # Introduction
 
 ## Objectives
 
 ## Data reception and cleaning
+
+**Analytical dataset**
+
+1. id
+1. age; continuous
+1. sex; binary
+1. sirs; binary
+1. joint; binary
+1. surgery success; binary
+1. surgery type; categorical
+1. multigerm infection; binary
+1. complication; binary
+1. time (date PJI diagnosis -- date last followup)
+1. event (death due to PJI)
+1. death (all causes)
+
+Obs: Complication Type was considered for analysis, but could not be safely converted to a categorical variable.
+It was dropped.
 
 # Methods
 
@@ -84,11 +106,49 @@ kable(history)
 source("scripts/results.R", encoding = 'UTF-8')
 ```
 
+## Outcome and covariates
+
+### Event and time definition
+
+- event: death due to PJI
+- time: between PJI diagnosis and event
+
+### Covariates
+
+- sex; binary
+- sirs; binary
+- joint; binary
+- surgery success; binary
+- surgery type; categorical
+- multigerm infection; binary
+- complication; binary
+
+## Statistical analyses
+
+- descriptive analysis of study population
+- kaplan-meier estimates for 2-year survival
+- bivariate analyses of covariates with log-rank test
+- significance alpha = 0.05
+
+### Statistical packages
+
 This analysis was performed using statistical software `R` version `r getRversion()`.
 Packages used for survival analyses were `survival` version `r packageVersion("survival")` and `survminer` version `r packageVersion("survminer")`.
 
 # Results
 
+## Study population and follow up
+
+- n = 54, 239 person-years
+- sex: males: 21 (39%), females: 33 (61%)
+- age: min = 32, max = 88
+- median age: 67 years (IQR: 60 -- 70)
+- followup time: min = 4 days, max = 16.35 years
+
+## Mortality
+
+- mortality: 5 PJI + 5 Other
+- deaths times: PJI 4 days -- 2.13 years, Other 2.37 years -- 13.17 years
 
 ![](../figures/death_all.png)
 Fig 1: Mortality due to all causes.
@@ -96,6 +156,7 @@ Fig 1: Mortality due to all causes.
 ![](../figures/death_PJI.png)
 Fig 2: Mortality confirmed to be caused by PJI.
 
+## 2-year survival rates
 
 ```{r tab1, message=FALSE, warning=FALSE}
 kable(tbl_km)
@@ -108,9 +169,11 @@ Table: **Table 1** Survival rates for 2-year.
 # Conclusions
 
 
-# Referecens
+# References
 
 # Appendix
+
+## Exploratory data analysis
 
 <!-- ```{r fig3, fig.height=12, fig.width=8} -->
 <!-- ggarrange(gg.sex$plot, gg.sirs$plot, gg.joint$plot, gg.stat.tja$plot, gg.outcome$plot, gg.comp$plot, labels = "AUTO", ncol = 2, nrow = 3) -->
@@ -136,6 +199,8 @@ Fig 8: Mortality under presence of surgical complication.
 
 <!-- ![](../figures/comp_type.png) -->
 <!-- Fig 9: Mortality by complication type. -->
+
+## Alternative results table
 
 ```{r tab2, message=FALSE, warning=FALSE}
 kable(tbl_km2)
