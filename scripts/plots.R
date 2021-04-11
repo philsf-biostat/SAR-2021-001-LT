@@ -3,7 +3,7 @@
 library(survminer)
 
 xlabel <- "Time (years)"
-pval.coord <- c(150, 0.10)
+pval.coord <- c(14, 0.10)
 
 # main figure -------------------------------------------------------------
 
