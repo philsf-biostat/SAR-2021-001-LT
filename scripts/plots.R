@@ -2,7 +2,7 @@
 
 library(survminer)
 
-xlabel <- "Time (months)"
+xlabel <- "Time (years)"
 pval.coord <- c(150, 0.10)
 
 # main figure -------------------------------------------------------------
@@ -34,8 +34,8 @@ gg.sirs <- ggsurvplot(
   ggtitle("Survival by Confirmed SIRS") +
   xlab(xlabel)
 
-gg.comp <- ggsurvplot(
-  survfit(se ~ comp, dtmin),
+gg.complication <- ggsurvplot(
+  survfit(se ~ complication, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
@@ -50,29 +50,29 @@ gg.joint <- ggsurvplot(
   ggtitle("Survival by operated joint") +
   xlab(xlabel)
 
-gg.stat.tja <- ggsurvplot(
-  survfit(se ~ stat.tja, dtmin),
+gg.surg.success <- ggsurvplot(
+  survfit(se ~ surg.success, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by success of TJA") +
+  ggtitle("Survival by surgery success") +
   xlab(xlabel)
 
-gg.outcome <- ggsurvplot(
-  survfit(se ~ outcome, dtmin),
+gg.surg.type <- ggsurvplot(
+  survfit(se ~ surg.type, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by surgery outcome") +
+  ggtitle("Survival by surgery type") +
   xlab(xlabel)
 
-gg.comp.type <- ggsurvplot(
-  survfit(se ~ comp.type, dtmin),
-  dtmin,
-  pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
-  ) +
-  ggtitle("Survival by type of complication") +
-  xlab(xlabel)
+# gg.comp.type <- ggsurvplot(
+#   survfit(se ~ comp.type, dtmin),
+#   dtmin,
+#   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
+#   ) +
+#   ggtitle("Survival by type of complication") +
+#   xlab(xlabel)
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")
 
