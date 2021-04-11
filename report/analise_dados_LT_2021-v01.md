@@ -108,6 +108,11 @@ The event of interest for this analysis is death caused by the PJI.
 For the main analysis patients that died from other causes were censored.
 The time to event was defined as the number of years between the diagnosis of PJI and the last follow-up noted.
 
+There were multiple outcomes to consider regarding the mortality in PJI patients.
+These causes were categorized as being caused by PJI (event of interest), other causes of death and survival (censored).
+This multi-state outcome was used to assess the competing risks of death under the PJI risk.
+The follow up time of all participants was considered in the person-year at risk.
+
 ### Covariates
 
 - sex; binary
