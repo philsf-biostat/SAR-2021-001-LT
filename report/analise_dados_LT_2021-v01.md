@@ -71,7 +71,7 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 
 
 
-Esta análise foi realizada utilizando-se o software `R` versão 4.0.5.
+This analysis was performed using statistical software `R` version 4.0.5.
 
 # Results
 

@@ -84,7 +84,7 @@ kable(history)
 source("scripts/results.R", encoding = 'UTF-8')
 ```
 
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+This analysis was performed using statistical software `R` version `r getRversion()`.
 
 # Results
 
