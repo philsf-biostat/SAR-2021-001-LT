@@ -161,10 +161,10 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
   - Other 2.37 years -- 13.17 years
 
 ![](../figures/death_all.png)
-Fig 1: Mortality due to all causes.
+**Figure 1** Mortality due to all causes.
 
 ![](../figures/death_PJI.png)
-Fig 2: Mortality confirmed to be caused by PJI.
+**Figure 2** Mortality confirmed to be caused by PJI.
 
 ## 2-year survival rates
 
@@ -216,27 +216,25 @@ Table: **Table 1** Survival rates for 2-year.
 <!-- ``` -->
 
 ![](../figures/Sex.png)
-Figure 3: Mortality by Sex.
+**Figure 3** Mortality by Sex.
 
 ![](../figures/Joint.png)
-Figure 4: Mortality by joint.
+**Figure 4** Mortality by joint.
 
 ![](../figures/Complication.png)
-Figure 5: Mortality under presence of surgical complication.
+**Figure 5** Mortality under presence of surgical complication.
 
 ![](../figures/Multigerm.png)
-Figure 6: Mortality by Multi-germ.
+**Figure 6** Mortality by Multi-germ.
 
 ![](../figures/SIRS.png)
-Figure 7: Mortality by SIRS.
-
-
+**Figure 7** Mortality by SIRS.
 
 ![](../figures/surg_success.png)
-Figure 8: mortality by status of the TJA.
+**Figure 8** mortality by status of the TJA.
 
 ![](../figures/surg_type.png)
-Figure 9: Mortality by surgery outcome.
+**Figure 9** Mortality by surgery outcome.
 
 <!-- ![](../figures/comp_type.png) -->
 <!-- Fig 9: Mortality by complication type. -->
