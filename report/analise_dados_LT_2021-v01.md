@@ -98,6 +98,7 @@ It was dropped.
 ### Event and time definition
 
 - event: death due to PJI
+  - deaths due to other causes were censored
 - time: between PJI diagnosis and event
 
 ### Covariates
@@ -135,7 +136,9 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
 ## Mortality
 
 - mortality: 5 PJI + 5 Other
-- deaths times: PJI 4 days -- 2.13 years, Other 2.37 years -- 13.17 years
+- no median time for deaths
+  - deaths times: PJI 4 days -- 2.13 years
+  - Other 2.37 years -- 13.17 years
 
 ![](../figures/death_all.png)
 Fig 1: Mortality due to all causes.
