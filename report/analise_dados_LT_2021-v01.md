@@ -164,6 +164,10 @@ Time under observation ranged from 4 days to 16.35 years, where all 54 participa
   - deaths times: PJI 4 days -- 2.13 years
   - Other 2.37 years -- 13.17 years
 
+44 of the 54 patients survived until the last follow up observation.
+Of the deaths recorded, 5 from other causes and 5 could be attributed to PJI (Fig 1).
+All deaths attributed to PJI occurred before the deaths unrelated.
+
 ![](../figures/death_all.png)
 **Figure 1** Mortality due to all causes.
 
