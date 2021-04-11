@@ -153,6 +153,10 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
   - mean 64.3 years (SD 11.6)
 - follow up time: min = 4 days, max = 16.35 years
 
+Of the 54 participants were included, 21 (39%) were male and 33 (61%) were female.
+Average (SD) age was 64.3 (11.6) years, ranging from 32 to 88 years.
+Time under observation ranged from 4 days to 16.35 years, where all 54 participants contributed with a total of 239 person-years of follow up.
+
 ## Mortality
 
 - mortality: 5 PJI + 5 Other
