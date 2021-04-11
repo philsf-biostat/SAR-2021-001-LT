@@ -1,14 +1,14 @@
-# Análise de Dados projeto xxx (Local, aaaa)
+# Survival analysis of PJI related deaths after TJA (Helios Klinikum Berlin-Buch, 2021)
 
-título
+Survival analysis of events attributed to PJI in patients that undergone TJA surgeries
 
-## Análises realizadas
+## Analyses performed
 
-1. xxx ([Planejamento][proj-xxx])
-2. yyy ([Planejamento][proj-yyy])
-3. zzz ([Planejamento][proj-zzz])
+1. Analysis ([Planning][proj-v01])
+<!-- 2. yyy ([Planejamento][proj-yyy]) -->
+<!-- 3. zzz ([Planejamento][proj-zzz]) -->
 
-[proj-xxx]: https://github.com/philsf-biostat/xxx/projects/xxx
+[proj-v01]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/1
 [proj-yyy]: https://github.com/philsf-biostat/xxx/projects/yyy
 [proj-zzz]: https://github.com/philsf-biostat/xxx/projects/zzz
 
