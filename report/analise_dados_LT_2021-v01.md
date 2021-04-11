@@ -77,10 +77,10 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
 # Results
 
 
-![](../figures/competing-risks.png)
+![](../figures/death_all.png)
 Fig 1: Mortality due to all causes.
 
-![](../figures/overall.png)
+![](../figures/death_PJI.png)
 Fig 2: Mortality confirmed to be caused by PJI.
 
 
@@ -147,16 +147,16 @@ Fig 4: Mortality by SIRS.
 ![](../figures/joint.png)
 Fig 5: Mortality by joint.
 
-![](../figures/status.png)
+![](../figures/surg_success.png)
 Fig 6: mortality by status of the TJA.
 
-![](../figures/result.png)
+![](../figures/surg_type.png)
 Fig 7: Mortality by surgery outcome.
 
 ![](../figures/complication.png)
 Fig 8: Mortality under presence of surgical complication.
 
-![](../figures/type.png)
+![](../figures/comp_type.png)
 Fig 9: Mortality by complication type.
 
 

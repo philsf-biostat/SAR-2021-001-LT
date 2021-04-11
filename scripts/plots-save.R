@@ -6,7 +6,7 @@ height <- 7
 
 # main figure -------------------------------------------------------------
 
-ggsave(filename = "figures/overall.png",
+ggsave(filename = "figures/death_PJI.png",
        plot = print(gg.overal),
        width = width, height = height
        )
@@ -38,19 +38,19 @@ ggsave(
   )
 
 ggsave(
-  filename = "figures/status.png",
+  filename = "figures/surg_success.png",
   plot = print(gg.surg.success),
   width = width, height = height
 )
 
 ggsave(
-  filename = "figures/result.png",
+  filename = "figures/surg_type.png",
   plot = print(gg.surg.type),
   width = width, height = height
   )
 
 ggsave(
-  filename = "figures/type.png",
+  filename = "figures/comp_type.png",
   plot = print(gg.comp.type),
   width = width, height = height
   )
@@ -58,7 +58,7 @@ ggsave(
 # competing risks ---------------------------------------------------------
 
 ggsave(
-  filename = "figures/competing-risks.png",
+  filename = "figures/death_all.png",
   plot = print(gg.cr),
   width = width, height = height
 )
