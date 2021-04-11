@@ -97,7 +97,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |joint                             |                  |0.703 |
 |Hip                               |92% (83%, 100%)   |      |
 |Knee                              |92% (82%, 100%)   |      |
-|stat.tja                          |                  |0.060 |
+|surg.success                      |                  |0.060 |
 |failure                           |84% (67%, 100%)   |      |
 |success                           |100% (100%, 100%) |      |
 |outcome                           |                  |0.002 |

@@ -48,7 +48,7 @@ dtmin <- dt.raw[, .(
   joint=factor(`Joint komb.`),
   outcome=factor(`Results Joint`),
   multigerm=MULTIGERM,
-  stat.tja=factor(`Success/Failure TJA`)
+  surg.success=factor(`Success/Failure TJA`)
   )]
 
 # Date cols

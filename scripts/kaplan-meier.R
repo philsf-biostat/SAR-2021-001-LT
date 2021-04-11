@@ -26,7 +26,7 @@ sf.sex <- survfit(se ~ sex, dtmin) # p = 0.32
 sf.sirs <- survfit(se ~ sirs, dtmin) # p = 0.038
 sf.comp <- survfit(se ~ comp, dtmin) # p = 0.013
 sf.joint <- survfit(se ~ joint, dtmin) # p = 0.71
-sf.stat.tja <- survfit(se ~ stat.tja, dtmin) # p = < 0.0001
+sf.surg.success <- survfit(se ~ surg.success, dtmin) # p = < 0.0001
 sf.outcome <- survfit(se ~ outcome, dtmin) # p < 0.0001
 sf.multigerm <- survfit(se ~ multigerm, dtmin) # p = 98
 sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
@@ -47,7 +47,7 @@ sd.sex <- survdiff(se ~ sex, dtmin) # p = 0.32
 sd.sirs <- survdiff(se ~ sirs, dtmin) # p = 0.038
 sd.comp <- survdiff(se ~ comp, dtmin) # p = 0.013
 sd.joint <- survdiff(se ~ joint, dtmin) # p = 0.71
-sd.stat.tja <- survdiff(se ~ stat.tja, dtmin) # p = < 0.0001
+sd.surg.success <- survdiff(se ~ surg.success, dtmin) # p = < 0.0001
 sd.outcome <- survdiff(se ~ outcome, dtmin) # p < 0.0001
 sd.multigerm <- survdiff(se ~ multigerm, dtmin) # p = 98
 sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
@@ -58,4 +58,4 @@ sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
 
 # library(forestmodel)
 # forest_model(coxph(Surv(time, event) ~ death + age + sex, dtmin))
-# forest_model(coxph(Surv(time, event) ~ death + stat.tja + outcome, dtmin))
+# forest_model(coxph(Surv(time, event) ~ death + surg.success + outcome, dtmin))

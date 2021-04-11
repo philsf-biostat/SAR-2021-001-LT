@@ -50,12 +50,12 @@ gg.joint <- ggsurvplot(
   ggtitle("Survival by operated joint") +
   xlab(xlabel)
 
-gg.stat.tja <- ggsurvplot(
-  survfit(se ~ stat.tja, dtmin),
+gg.surg.success <- ggsurvplot(
+  survfit(se ~ surg.success, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by success of TJA") +
+  ggtitle("Survival by surgery success") +
   xlab(xlabel)
 
 gg.outcome <- ggsurvplot(

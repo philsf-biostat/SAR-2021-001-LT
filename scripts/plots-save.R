@@ -39,7 +39,7 @@ ggsave(
 
 ggsave(
   filename = "figures/status.png",
-  plot = print(gg.stat.tja),
+  plot = print(gg.surg.success),
   width = width, height = height
 )
 
