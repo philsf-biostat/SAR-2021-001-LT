@@ -44,16 +44,16 @@ dt.raw$time <- interval(start = dt.raw$`Date PJI`, end = dt.raw$`Date Last F/U`)
 dtmin <- dt.raw[, .(
   id=factor(`Case ID`),
   age=`Age at PJI`,
+  sex=factor(Sex),
+  time,# timep, timei, timet,
   event,
   death,
-  time,# timep, timei, timet,
-  sex=factor(Sex),
+  joint=factor(`Joint komb.`),
   complication=factor(COMPLICATION),
   # comp.type=factor(`TYPE Complication`),
   sirs=factor(SIRS),
-  joint=factor(`Joint komb.`),
-  surg.type=factor(`Results Joint`),
   multigerm=MULTIGERM,
+  surg.type=factor(`Results Joint`),
   surg.success=factor(`Success/Failure TJA`)
   )]
 
