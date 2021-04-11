@@ -36,15 +36,28 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 
 ---
 
-# Signatures
+<!-- # Signatures -->
 
+<!-- ```{r, echo=FALSE} -->
+<!-- sig.field <- "__________________________" -->
+<!-- date.field <- "_____________" -->
+<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
+<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
+<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
+<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
 
-|Papel           |Nome |Função |Assinatura                 |Data          |
-|:---------------|:----|:------|:--------------------------|:-------------|
-|Elaborador      |Nome |Função |__________________________ |_____________ |
-|Revisado por    |     |       |__________________________ |_____________ |
-|Verificado por  |     |       |__________________________ |_____________ |
-|Aprovação final |     |       |__________________________ |_____________ |
+<!-- sigs <- rbind( -->
+<!--   Stat -->
+<!--   , Reviewer -->
+<!--   , Approver -->
+<!--   , Final.Approver -->
+<!--   ) -->
+<!-- rownames(sigs) <- NULL -->
+<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
+
+<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
+<!-- kable(sigs) -->
+<!-- ``` -->
 
 # Abbreviations
 
@@ -119,6 +132,10 @@ Table: **Table 1** Survival rates for 2-year.
 # Referecens
 
 # Appendix
+
+<!-- ```{r fig3, fig.height=12, fig.width=8} -->
+<!-- ggarrange(gg.sex$plot, gg.sirs$plot, gg.joint$plot, gg.stat.tja$plot, gg.outcome$plot, gg.comp$plot, labels = "AUTO", ncol = 2, nrow = 3) -->
+<!-- ``` -->
 
 ![](../figures/sex.png)
 Fig 3: Mortality by sex.
