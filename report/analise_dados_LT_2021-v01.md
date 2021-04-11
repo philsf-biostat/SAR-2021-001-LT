@@ -101,9 +101,9 @@ It was dropped.
 
 ### Event and time definition
 
-- event: death due to PJI
-  - deaths due to other causes were censored
-- time: between PJI diagnosis and event
+<!-- - event: death due to PJI -->
+<!--   - deaths due to other causes were censored -->
+<!-- - time: between PJI diagnosis and event -->
 
 The event of interest for this analysis is death caused by the PJI.
 For the main analysis patients that died from other causes were censored.
@@ -126,10 +126,10 @@ The follow up time of all participants was considered in the person-year at risk
 
 ## Statistical analyses
 
-- descriptive analysis of study population
-- Kaplan-Meier estimates for 2-year survival
-- bi-variate analyses of covariates with log-rank test
-- significance alpha = 0.05
+<!-- - descriptive analysis of study population -->
+<!-- - Kaplan-Meier estimates for 2-year survival -->
+<!-- - bi-variate analyses of covariates with log-rank test -->
+<!-- - significance alpha = 0.05 -->
 
 Demographic characteristics were described with mean (SD) or proportions, where appropriate.
 Kaplan-Meier curves were computed for the at-risk study population for the event of interest.
@@ -147,11 +147,11 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
 
 ## Study population and follow up
 
-- n = 54, 239 person-years
-- sex: males: 21 (39%), females: 33 (61%)
-- age: min = 32, max = 88
-  - mean 64.3 years (SD 11.6)
-- follow up time: min = 4 days, max = 16.35 years
+<!-- - n = 54, 239 person-years -->
+<!-- - sex: males: 21 (39%), females: 33 (61%) -->
+<!-- - age: min = 32, max = 88 -->
+<!--   - mean 64.3 years (SD 11.6) -->
+<!-- - follow up time: min = 4 days, max = 16.35 years -->
 
 Of the 54 participants were included, 21 (39%) were male and 33 (61%) were female.
 Average (SD) age was 64.3 (11.6) years, ranging from 32 to 88 years.
@@ -159,10 +159,10 @@ Time under observation ranged from 4 days to 16.35 years, where all 54 participa
 
 ## Mortality
 
-- mortality: 5 PJI + 5 Other
-- no median time for deaths
-  - deaths times: PJI 4 days -- 2.13 years
-  - Other 2.37 years -- 13.17 years
+<!-- - mortality: 5 PJI + 5 Other -->
+<!-- - no median time for deaths -->
+<!--   - deaths times: PJI 4 days -- 2.13 years -->
+<!--   - Other 2.37 years -- 13.17 years -->
 
 44 of the 54 patients survived until the last follow up observation.
 Of the deaths recorded, 5 from other causes and 5 could be attributed to PJI (Fig 1).
