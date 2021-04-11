@@ -219,6 +219,10 @@ In this sample surgical complications decreased the survival (log-rank p=0.038),
 
 Table: **Table 1** Survival rates for 2-year.
 
+Although a significant difference in the status of surgery success was not detected it could be possible that there is a true association between these predictos.
+This variable had 18 missing values in the sample that were dropped from the analysis.
+Oh the other hand the effect of a surgical complication is strong enough to be detected even in the presence of 13 missing values in the sample.
+
 # Exceptions and Observations
 
 # Conclusions
