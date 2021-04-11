@@ -167,7 +167,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 ## 2-year survival rates
 
 ```{r tab1, message=FALSE, warning=FALSE}
-kable(tbl_km)
+pander(tbl_km)
 ```
 
 Table: **Table 1** Survival rates for 2-year.
@@ -211,7 +211,7 @@ Fig 8: Mortality under presence of surgical complication.
 ## Alternative results table
 
 ```{r tab2, message=FALSE, warning=FALSE}
-kable(tbl_km2)
+pander(tbl_km2)
 ```
 
 Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
