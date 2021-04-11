@@ -174,6 +174,7 @@ The survival rate at the end of study follow up was 89.7% so the median time of 
 The 1-year survival rate was estimated as 96% (91% -- 100%) and the 2-year survival rate was estimated as 92% (85% -- 100%).
 
 Times of deaths unrelated to PJI ranged from 2.37 years to 13.17 years (Fig 1).
+It is noticeable that, while this analysis does not give proof that there is a significant difference between times of death between all causes, this sample seem to indicate that most patients die from PJI within 2 years of the diagnosis.
 
 ![](../figures/death_all.png)
 **Figure 1** Mortality due to all causes.
