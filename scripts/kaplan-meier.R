@@ -30,7 +30,6 @@ sf.stat.tja <- survfit(se ~ stat.tja, dtmin) # p = < 0.0001
 sf.outcome <- survfit(se ~ outcome, dtmin) # p < 0.0001
 sf.multigerm <- survfit(se ~ multigerm, dtmin) # p = 98
 sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
-sf.status <- survfit(se ~ status, dtmin) # p < 0.0001
 
 # competing risks ---------------------------------------------------------
 
@@ -52,7 +51,6 @@ sd.stat.tja <- survdiff(se ~ stat.tja, dtmin) # p = < 0.0001
 sd.outcome <- survdiff(se ~ outcome, dtmin) # p < 0.0001
 sd.multigerm <- survdiff(se ~ multigerm, dtmin) # p = 98
 sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
-sd.status <- survdiff(se ~ status, dtmin) # p < 0.0001
 
 
 # forest plots ------------------------------------------------------------

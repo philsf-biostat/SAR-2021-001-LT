@@ -40,7 +40,7 @@ dtmin <- dt.raw[, .(
   age=`Age at PJI`,
   event,
   status,
-  time, timep, timei, timet,
+  time,# timep, timei, timet,
   sex=factor(Sex),
   comp=factor(COMPLICATION),
   comp.type=factor(`TYPE Complication`),
