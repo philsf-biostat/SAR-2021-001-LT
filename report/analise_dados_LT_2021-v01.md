@@ -62,7 +62,7 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 # Abbreviations
 
 - PJI:
-- SIRS: systemic inflamtory response
+- SIRS: systemic inflammatory response
 - TJA:
 
 # Introduction
@@ -70,11 +70,11 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 ## Objectives
 
 Perform a Kaplan-Meier survival analyses on the deaths caused by PJI after a TJA surgical procedure.
-Additionally, explore possible risk factor for PJI mortality in bivariate analyses.
+Additionally, explore possible risk factor for PJI mortality in bi-variate analyses.
 
 ## Data reception and cleaning
 
-**Analytical dataset**
+**Analytical data-set**
 
 1. id
 1. age; continuous
@@ -83,7 +83,7 @@ Additionally, explore possible risk factor for PJI mortality in bivariate analys
 1. joint; binary
 1. surgery success; binary
 1. surgery type; categorical
-1. multigerm infection; binary
+1. multi-germ infection; binary
 1. complication; binary
 1. time (date PJI diagnosis -- date last followup)
 1. event (death due to PJI)
@@ -111,14 +111,14 @@ It was dropped.
 - joint; binary
 - surgery success; binary
 - surgery type; categorical
-- multigerm infection; binary
+- multi-germ infection; binary
 - complication; binary
 
 ## Statistical analyses
 
 - descriptive analysis of study population
-- kaplan-meier estimates for 2-year survival
-- bivariate analyses of covariates with log-rank test
+- Kaplan-Meier estimates for 2-year survival
+- bi-variate analyses of covariates with log-rank test
 - significance alpha = 0.05
 
 ### Statistical packages
@@ -253,8 +253,8 @@ Fig 8: Mortality under presence of surgical complication.
 
 Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
 
-## Analytical dataset
+## Analytical data-set
 
-Due to confidentiality the dataset used in this analysis cannot be shared online in the public version of this report.
+Due to confidentiality the data-set used in this analysis cannot be shared online in the public version of this report.
 
 
