@@ -168,6 +168,8 @@ Time under observation ranged from 4 days to 16.35 years, where all 54 participa
 Of the deaths recorded, 5 from other causes and 5 could be attributed to PJI (Fig 1).
 All deaths attributed to PJI occurred before the deaths unrelated.
 
+Times of deaths unrelated to PJI ranged from 2.37 years to 13.17 years (Fig 1).
+
 ![](../figures/death_all.png)
 **Figure 1** Mortality due to all causes.
 
