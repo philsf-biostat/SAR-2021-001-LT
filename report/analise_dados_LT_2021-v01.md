@@ -69,6 +69,9 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 
 ## Objectives
 
+Perform a Kaplan-Meier survival analyses on the deaths caused by PJI after a TJA surgical procedure.
+Additionally, explore possible risk factor for PJI mortality in bivariate analyses.
+
 ## Data reception and cleaning
 
 **Analytical dataset**
