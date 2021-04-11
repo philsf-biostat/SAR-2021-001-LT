@@ -182,8 +182,8 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |      Hip       |  92% (83%, 100%)  |       |
 |      Knee      |  92% (82%, 100%)  |       |
 |  surg.success  |                   | 0.060 |
-|    failure     |  84% (67%, 100%)  |       |
-|    success     | 100% (100%, 100%) |       |
+|    Failure     |  84% (67%, 100%)  |       |
+|    Success     | 100% (100%, 100%) |       |
 |   surg.type    |                   | 0.002 |
 |   Amputation   |     — (—, —)      |       |
 |  Arthrodesis   | 100% (100%, 100%) |       |
@@ -252,8 +252,8 @@ Fig 8: Mortality under presence of surgical complication.
 |      Hip       |  96% (89%, 100%)  |  92% (83%, 100%)  |       |
 |      Knee      |  96% (89%, 100%)  |  92% (82%, 100%)  |       |
 |  surg.success  |                   |                   | 0.060 |
-|    failure     |  93% (80%, 100%)  |  84% (67%, 100%)  |       |
-|    success     | 100% (100%, 100%) | 100% (100%, 100%) |       |
+|    Failure     |  93% (80%, 100%)  |  84% (67%, 100%)  |       |
+|    Success     | 100% (100%, 100%) | 100% (100%, 100%) |       |
 |   surg.type    |                   |                   | 0.002 |
 |   Amputation   | 100% (100%, 100%) |     — (—, —)      |       |
 |  Arthrodesis   | 100% (100%, 100%) | 100% (100%, 100%) |       |

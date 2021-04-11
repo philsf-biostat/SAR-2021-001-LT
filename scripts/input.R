@@ -4,11 +4,12 @@ dt.raw <- read_excel("dataset/2021-02-12 Edit_LUcio_ von 210207 Data PJI Westerh
 dt.raw <- data.table(dt.raw)
 
 # data cleaning -----------------------------------------------------------
+library(stringr)
 
 dt.raw <- dt.raw[!is.na(`Case ID`)] # remove 3 junk lines on the tail
 dt.raw[`Results Joint`=="spacer"]$`Results Joint` <- "Spacer"
 dt.raw$Sex <- toupper(dt.raw$Sex)
-dt.raw$`Success/Failure TJA` <- tolower(dt.raw$`Success/Failure TJA`)
+dt.raw$`Success/Failure TJA` <- str_to_title(dt.raw$`Success/Failure TJA`)
 
 # KM vars -----------------------------------------------------------------
 
