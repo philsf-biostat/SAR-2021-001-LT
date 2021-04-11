@@ -1,7 +1,7 @@
 ---
 title: "Survival analysis of events attributed to PJI in patients that undergone TJA surgeries"
-author: '**De:** Felipe Figueiredo **Para:** ___'
-date: '**Data: ** dd/mm/aaaa'
+author: '**From:** Felipe Figueiredo **To:** Lucio Toledo'
+date: '**Date: ** 2021-04-11'
 output:
   html_document:
     fig_caption: yes
