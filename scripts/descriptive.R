@@ -16,9 +16,9 @@ library(gtsummary)
 
 ## multistate model - competing events
 # tbl_survfit(list(sfm,
-#                  survfit(formula = Surv(time, status) ~ sex, data = dtmin),
-#                  survfit(formula = Surv(time, status) ~ sirs, data = dtmin),
-#                  survfit(formula = Surv(time, status) ~ comp, data = dtmin)
+#                  survfit(formula = Surv(time, death) ~ sex, data = dtmin),
+#                  survfit(formula = Surv(time, death) ~ sirs, data = dtmin),
+#                  survfit(formula = Surv(time, death) ~ comp, data = dtmin)
 #                  ), times = c(12, 24)) %>% add_p()
 
 list_sf <- list(sf.1,

@@ -33,11 +33,11 @@ sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
 
 # competing risks ---------------------------------------------------------
 
-sfm <- survfit(Surv(time, status) ~ 1, data = dtmin)
+sfm <- survfit(Surv(time, death) ~ 1, data = dtmin)
 
 library(cmprsk)
 
-cr <- with(dtmin, cuminc(time, status))
+cr <- with(dtmin, cuminc(time, death))
 
 
 # survival diffs ----------------------------------------------------------
@@ -57,5 +57,5 @@ sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
 
 
 # library(forestmodel)
-# forest_model(coxph(Surv(time, event) ~ status + age + sex, dtmin))
-# forest_model(coxph(Surv(time, event) ~ status + stat.tja + outcome, dtmin))
+# forest_model(coxph(Surv(time, event) ~ death + age + sex, dtmin))
+# forest_model(coxph(Surv(time, event) ~ death + stat.tja + outcome, dtmin))
