@@ -3,6 +3,14 @@ library(data.table)
 dt.raw <- read_excel("dataset/2021-02-12 Edit_LUcio_ von 210207 Data PJI Westerholt.xlsx", na = c("NA", "t.b.d."))
 dt.raw <- data.table(dt.raw)
 
+# data cleaning -----------------------------------------------------------
+library(stringr)
+
+dt.raw <- dt.raw[!is.na(`Case ID`)] # remove 3 junk lines on the tail
+dt.raw[`Results Joint`=="spacer"]$`Results Joint` <- "Spacer"
+dt.raw$Sex <- toupper(dt.raw$Sex)
+dt.raw$`Success/Failure TJA` <- str_to_title(dt.raw$`Success/Failure TJA`)
+
 # KM vars -----------------------------------------------------------------
 
 # deaths
@@ -37,17 +45,17 @@ dt.raw$time <- interval(start = dt.raw$`Date PJI`, end = dt.raw$`Date Last F/U`)
 
 dtmin <- dt.raw[, .(
   id=factor(`Case ID`),
-  age=`Age at PJI`,
+  Age=`Age at PJI`,
+  Sex=factor(Sex),
+  time,# timep, timei, timet,
   event,
   death,
-  time,# timep, timei, timet,
-  sex=factor(Sex),
-  complication=factor(COMPLICATION),
+  Joint=factor(`Joint komb.`),
+  Complication=factor(COMPLICATION),
   # comp.type=factor(`TYPE Complication`),
-  sirs=factor(SIRS),
-  joint=factor(`Joint komb.`),
+  SIRS=factor(SIRS),
+  Multigerm=MULTIGERM,
   surg.type=factor(`Results Joint`),
-  multigerm=MULTIGERM,
   surg.success=factor(`Success/Failure TJA`)
   )]
 

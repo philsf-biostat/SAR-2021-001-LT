@@ -3,7 +3,7 @@
 library(survminer)
 
 xlabel <- "Time (years)"
-pval.coord <- c(150, 0.10)
+pval.coord <- c(14, 0.10)
 
 # main figure -------------------------------------------------------------
 
@@ -18,36 +18,44 @@ gg.overal <- ggsurvplot(
 
 # additional figures ------------------------------------------------------
 
-gg.sex <- ggsurvplot(
-  survfit(se ~ sex, dtmin),
+gg.Sex <- ggsurvplot(
+  survfit(se ~ Sex, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by sex") +
+  ggtitle("Survival by Sex") +
   xlab(xlabel)
 
-gg.sirs <- ggsurvplot(
-  survfit(se ~ sirs, dtmin),
+gg.SIRS <- ggsurvplot(
+  survfit(se ~ SIRS, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
   ggtitle("Survival by Confirmed SIRS") +
   xlab(xlabel)
 
-gg.complication <- ggsurvplot(
-  survfit(se ~ complication, dtmin),
+gg.Multigerm <- ggsurvplot(
+  survfit(se ~ Multigerm, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
-  ) +
-  ggtitle("Survival given complications") +
+) +
+  ggtitle("Survival given multi-germ infection") +
   xlab(xlabel)
 
-gg.joint <- ggsurvplot(
-  survfit(se ~ joint, dtmin),
+gg.Complication <- ggsurvplot(
+  survfit(se ~ Complication, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by operated joint") +
+  ggtitle("Survival given Complications") +
+  xlab(xlabel)
+
+gg.Joint <- ggsurvplot(
+  survfit(se ~ Joint, dtmin),
+  dtmin,
+  pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
+  ) +
+  ggtitle("Survival by operated Joint") +
   xlab(xlabel)
 
 gg.surg.success <- ggsurvplot(
@@ -71,7 +79,7 @@ gg.surg.type <- ggsurvplot(
 #   dtmin,
 #   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
 #   ) +
-#   ggtitle("Survival by type of complication") +
+#   ggtitle("Survival by type of Complication") +
 #   xlab(xlabel)
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")

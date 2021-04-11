@@ -14,26 +14,32 @@ ggsave(filename = "figures/death_PJI.png",
 # additional figures ------------------------------------------------------
 
 ggsave(
-  filename = "figures/sex.png",
-  plot = print(gg.sex),
+  filename = "figures/Sex.png",
+  plot = print(gg.Sex),
   width = width, height = height
   )
 
 ggsave(
-  filename = "figures/sirs.png",
-  plot = print(gg.sirs),
+  filename = "figures/SIRS.png",
+  plot = print(gg.SIRS),
   width = width, height = height
   )
 
 ggsave(
-  filename = "figures/complication.png",
-  plot = print(gg.complication),
+  filename = "figures/Multigerm.png",
+  plot = print(gg.Multigerm),
+  width = width, height = height
+)
+
+ggsave(
+  filename = "figures/Complication.png",
+  plot = print(gg.Complication),
   width = width, height = height
   )
 
 ggsave(
-  filename = "figures/joint.png",
-  plot = print(gg.joint),
+  filename = "figures/Joint.png",
+  plot = print(gg.Joint),
   width = width, height = height
   )
 
