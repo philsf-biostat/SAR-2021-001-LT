@@ -62,6 +62,7 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 # Abbreviations
 
 - PJI:
+- SD: standard deviation
 - SIRS: systemic inflammatory response
 - TJA:
 
@@ -130,7 +131,7 @@ The follow up time of all participants was considered in the person-year at risk
 - bi-variate analyses of covariates with log-rank test
 - significance alpha = 0.05
 
-Demographic characteristics were described with median and IQR or proportions, where appropriate.
+Demographic characteristics were described with mean (SD) or proportions, where appropriate.
 Kaplan-Meier curves were computed for the at-risk study population for the event of interest.
 For all covariates considered the 2-year survival rates were computed for the event of interest.
 The all-cause mortality was assessed using the competing risks overall figure.
@@ -149,7 +150,7 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
 - n = 54, 239 person-years
 - sex: males: 21 (39%), females: 33 (61%)
 - age: min = 32, max = 88
-- median age: 67 years (IQR: 60 -- 70)
+  - mean 64.3 years (SD 11.6)
 - follow up time: min = 4 days, max = 16.35 years
 
 ## Mortality
