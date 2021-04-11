@@ -172,7 +172,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 | Characteristic |  2-year survival  |   p   |
 |:--------------:|:-----------------:|:-----:|
 |    Overall     |  92% (85%, 100%)  |       |
-|      sex       |                   | 0.275 |
+|      Sex       |                   | 0.275 |
 |       F        |  93% (85%, 100%)  |       |
 |       M        |  90% (79%, 100%)  |       |
 |      sirs      |                   | 0.056 |
@@ -215,8 +215,8 @@ Table: **Table 1** Survival rates for 2-year.
 <!-- ggarrange(gg.sex$plot, gg.sirs$plot, gg.joint$plot, gg.stat.tja$plot, gg.outcome$plot, gg.comp$plot, labels = "AUTO", ncol = 2, nrow = 3) -->
 <!-- ``` -->
 
-![](../figures/sex.png)
-Fig 3: Mortality by sex.
+![](../figures/Sex.png)
+Fig 3: Mortality by Sex.
 
 ![](../figures/sirs.png)
 Fig 4: Mortality by SIRS.
@@ -242,7 +242,7 @@ Fig 8: Mortality under presence of surgical complication.
 | Characteristic |  1-year survival  |  2-year survival  |   p   |
 |:--------------:|:-----------------:|:-----------------:|:-----:|
 |    Overall     |  96% (91%, 100%)  |  92% (85%, 100%)  |       |
-|      sex       |                   |                   | 0.275 |
+|      Sex       |                   |                   | 0.275 |
 |       F        | 100% (100%, 100%) |  93% (85%, 100%)  |       |
 |       M        |  90% (79%, 100%)  |  90% (79%, 100%)  |       |
 |      sirs      |                   |                   | 0.056 |

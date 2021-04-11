@@ -14,8 +14,8 @@ ggsave(filename = "figures/death_PJI.png",
 # additional figures ------------------------------------------------------
 
 ggsave(
-  filename = "figures/sex.png",
-  plot = print(gg.sex),
+  filename = "figures/Sex.png",
+  plot = print(gg.Sex),
   width = width, height = height
   )
 

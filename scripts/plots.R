@@ -18,12 +18,12 @@ gg.overal <- ggsurvplot(
 
 # additional figures ------------------------------------------------------
 
-gg.sex <- ggsurvplot(
-  survfit(se ~ sex, dtmin),
+gg.Sex <- ggsurvplot(
+  survfit(se ~ Sex, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by sex") +
+  ggtitle("Survival by Sex") +
   xlab(xlabel)
 
 gg.sirs <- ggsurvplot(

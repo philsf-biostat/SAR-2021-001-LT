@@ -45,8 +45,8 @@ dt.raw$time <- interval(start = dt.raw$`Date PJI`, end = dt.raw$`Date Last F/U`)
 
 dtmin <- dt.raw[, .(
   id=factor(`Case ID`),
-  age=`Age at PJI`,
-  sex=factor(Sex),
+  Age=`Age at PJI`,
+  Sex=factor(Sex),
   time,# timep, timei, timet,
   event,
   death,
