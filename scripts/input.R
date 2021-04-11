@@ -3,6 +3,12 @@ library(data.table)
 dt.raw <- read_excel("dataset/2021-02-12 Edit_LUcio_ von 210207 Data PJI Westerholt.xlsx", na = c("NA", "t.b.d."))
 dt.raw <- data.table(dt.raw)
 
+# data cleaning -----------------------------------------------------------
+
+dt.raw <- dt.raw[!is.na(`Case ID`)] # remove 3 junk lines on the tail
+dt.raw[`Results Joint`=="spacer"]$`Results Joint` <- "Spacer"
+dt.raw$`Success/Failure TJA` <- tolower(dt.raw$`Success/Failure TJA`)
+
 # KM vars -----------------------------------------------------------------
 
 # deaths
