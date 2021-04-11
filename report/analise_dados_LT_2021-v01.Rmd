@@ -207,7 +207,7 @@ Table: **Table 1** Survival rates for 2-year.
 ![](../figures/Sex.png)
 Fig 3: Mortality by Sex.
 
-![](../figures/sirs.png)
+![](../figures/SIRS.png)
 Fig 4: Mortality by SIRS.
 
 ![](../figures/Joint.png)

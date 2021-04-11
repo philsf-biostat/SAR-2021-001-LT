@@ -20,8 +20,8 @@ ggsave(
   )
 
 ggsave(
-  filename = "figures/sirs.png",
-  plot = print(gg.sirs),
+  filename = "figures/SIRS.png",
+  plot = print(gg.SIRS),
   width = width, height = height
   )
 

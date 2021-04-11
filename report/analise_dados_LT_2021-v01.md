@@ -175,7 +175,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |      Sex       |                   | 0.275 |
 |       F        |  93% (85%, 100%)  |       |
 |       M        |  90% (79%, 100%)  |       |
-|      sirs      |                   | 0.056 |
+|      SIRS      |                   | 0.056 |
 |       N        |  97% (92%, 100%)  |       |
 |       Y        |  77% (57%, 100%)  |       |
 |     Joint      |                   | 0.703 |
@@ -218,7 +218,7 @@ Table: **Table 1** Survival rates for 2-year.
 ![](../figures/Sex.png)
 Fig 3: Mortality by Sex.
 
-![](../figures/sirs.png)
+![](../figures/SIRS.png)
 Fig 4: Mortality by SIRS.
 
 ![](../figures/Joint.png)
@@ -245,7 +245,7 @@ Fig 8: Mortality under presence of surgical complication.
 |      Sex       |                   |                   | 0.275 |
 |       F        | 100% (100%, 100%) |  93% (85%, 100%)  |       |
 |       M        |  90% (79%, 100%)  |  90% (79%, 100%)  |       |
-|      sirs      |                   |                   | 0.056 |
+|      SIRS      |                   |                   | 0.056 |
 |       N        | 100% (100%, 100%) |  97% (92%, 100%)  |       |
 |       Y        |  85% (67%, 100%)  |  77% (57%, 100%)  |       |
 |     Joint      |                   |                   | 0.703 |

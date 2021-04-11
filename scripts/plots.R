@@ -26,8 +26,8 @@ gg.Sex <- ggsurvplot(
   ggtitle("Survival by Sex") +
   xlab(xlabel)
 
-gg.sirs <- ggsurvplot(
-  survfit(se ~ sirs, dtmin),
+gg.SIRS <- ggsurvplot(
+  survfit(se ~ SIRS, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
