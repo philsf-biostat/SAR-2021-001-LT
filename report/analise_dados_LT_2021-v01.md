@@ -104,6 +104,10 @@ It was dropped.
   - deaths due to other causes were censored
 - time: between PJI diagnosis and event
 
+The event of interest for this analysis is death caused by the PJI.
+For the main analysis patients that died from other causes were censored.
+The time to event was defined as the number of years between the diagnosis of PJI and the last follow-up noted.
+
 ### Covariates
 
 - sex; binary
