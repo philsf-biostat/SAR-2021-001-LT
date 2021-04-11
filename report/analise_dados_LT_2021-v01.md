@@ -97,9 +97,9 @@ It was dropped.
 
 
 
-## Outcome and covariates
+## Variables
 
-### Event and time definition
+### Outcome and time definition
 
 <!-- - event: death due to PJI -->
 <!--   - deaths due to other causes were censored -->
