@@ -153,12 +153,28 @@ Packages used for survival analyses were `survival` version 3.2.10 and `survmine
   - mean 64.3 years (SD 11.6)
 - follow up time: min = 4 days, max = 16.35 years
 
+Of the 54 participants were included, 21 (39%) were male and 33 (61%) were female.
+Average (SD) age was 64.3 (11.6) years, ranging from 32 to 88 years.
+Time under observation ranged from 4 days to 16.35 years, where all 54 participants contributed with a total of 239 person-years of follow up.
+
 ## Mortality
 
 - mortality: 5 PJI + 5 Other
 - no median time for deaths
   - deaths times: PJI 4 days -- 2.13 years
   - Other 2.37 years -- 13.17 years
+
+44 of the 54 patients survived until the last follow up observation.
+Of the deaths recorded, 5 from other causes and 5 could be attributed to PJI (Fig 1).
+All deaths attributed to PJI occurred before the deaths unrelated.
+
+Figure 2 shows the Kaplan-Meier estimate of the mortality rate attributed to PJI.
+Times of death ranged from 4 days to 2.13 years.
+The survival rate at the end of study follow up was 89.7% so the median time of survival could not be estimated.
+The 1-year survival rate was estimated as 96% (91% -- 100%) and the 2-year survival rate was estimated as 92% (85% -- 100%).
+
+Times of deaths unrelated to PJI ranged from 2.37 years to 13.17 years (Fig 1).
+It is noticeable that, while this analysis does not give proof that there is a significant difference between times of death between all causes, this sample seem to indicate that most patients die from PJI within 2 years of the diagnosis.
 
 ![](../figures/death_all.png)
 **Figure 1** Mortality due to all causes.
