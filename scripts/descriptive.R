@@ -28,8 +28,8 @@ list_sf <- list(sf.1,
                 sf.surg.success,
                 sf.surg.type,
                 sf.multigerm,
-                sf.complication,
-                sf.comp.type
+                sf.complication
+                # sf.comp.type
 )
 
 # tbl_survfit(dtmin, y = Surv(time, event), include = c(sex, sirs, joint, surg.success, surg.type, multigerm, complication), times= c(12, 24)) %>% add_p()

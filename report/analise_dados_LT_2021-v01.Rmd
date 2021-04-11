@@ -134,8 +134,8 @@ Fig 7: Mortality by surgery outcome.
 ![](../figures/complication.png)
 Fig 8: Mortality under presence of surgical complication.
 
-![](../figures/comp_type.png)
-Fig 9: Mortality by complication type.
+<!-- ![](../figures/comp_type.png) -->
+<!-- Fig 9: Mortality by complication type. -->
 
 ```{r tab2, message=FALSE, warning=FALSE}
 # tbl.1.2.yr

@@ -49,11 +49,11 @@ ggsave(
   width = width, height = height
   )
 
-ggsave(
-  filename = "figures/comp_type.png",
-  plot = print(gg.comp.type),
-  width = width, height = height
-  )
+# ggsave(
+#   filename = "figures/comp_type.png",
+#   plot = print(gg.comp.type),
+#   width = width, height = height
+#   )
 
 # competing risks ---------------------------------------------------------
 

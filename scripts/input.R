@@ -43,7 +43,7 @@ dtmin <- dt.raw[, .(
   time,# timep, timei, timet,
   sex=factor(Sex),
   complication=factor(COMPLICATION),
-  comp.type=factor(`TYPE Complication`),
+  # comp.type=factor(`TYPE Complication`),
   sirs=factor(SIRS),
   joint=factor(`Joint komb.`),
   surg.type=factor(`Results Joint`),

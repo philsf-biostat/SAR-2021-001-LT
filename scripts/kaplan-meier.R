@@ -29,7 +29,7 @@ sf.joint <- survfit(se ~ joint, dtmin) # p = 0.71
 sf.surg.success <- survfit(se ~ surg.success, dtmin) # p = < 0.0001
 sf.surg.type <- survfit(se ~ surg.type, dtmin) # p < 0.0001
 sf.multigerm <- survfit(se ~ multigerm, dtmin) # p = 98
-sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
+# sf.comp.type <- survfit(se ~ comp.type, dtmin) # p = 0.24
 
 # competing risks ---------------------------------------------------------
 
@@ -50,7 +50,7 @@ sd.joint <- survdiff(se ~ joint, dtmin) # p = 0.71
 sd.surg.success <- survdiff(se ~ surg.success, dtmin) # p = < 0.0001
 sd.surg.type <- survdiff(se ~ surg.type, dtmin) # p < 0.0001
 sd.multigerm <- survdiff(se ~ multigerm, dtmin) # p = 98
-sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
+# sd.comp.type <- survdiff(se ~ comp.type, dtmin) # p = 0.24
 
 
 # forest plots ------------------------------------------------------------

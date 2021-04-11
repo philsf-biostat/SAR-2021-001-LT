@@ -66,13 +66,13 @@ gg.surg.type <- ggsurvplot(
   ggtitle("Survival by surgery type") +
   xlab(xlabel)
 
-gg.comp.type <- ggsurvplot(
-  survfit(se ~ comp.type, dtmin),
-  dtmin,
-  pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
-  ) +
-  ggtitle("Survival by type of complication") +
-  xlab(xlabel)
+# gg.comp.type <- ggsurvplot(
+#   survfit(se ~ comp.type, dtmin),
+#   dtmin,
+#   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
+#   ) +
+#   ggtitle("Survival by type of complication") +
+#   xlab(xlabel)
 
 # boxplot(dtmin$time, ylab = "Time (years)", main = "Distribution of follow-up time in the cohort")
 
