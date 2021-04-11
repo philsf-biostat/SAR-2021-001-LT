@@ -24,14 +24,14 @@ library(lubridate)
 # time since PJI
 dt.raw$time <- interval(start = dt.raw$`Date PJI`, end = dt.raw$`Date Last F/U`)/dmonths(1)
 
-# time since last procedure
-dt.raw$timep <- interval(start = dt.raw$`Date Last Procedure`, end = dt.raw$`Date Last F/U`)/dmonths(1)
-
-# time since index
-dt.raw$timei <- interval(start = dt.raw$`Date Index`, end = dt.raw$`Date Last F/U`)/dmonths(1)
-
-# time last tja
-dt.raw$timet <- interval(start = dt.raw$`Date Last TJA`, end = dt.raw$`Date Last F/U`)/dmonths(1)
+# # time since last procedure
+# dt.raw$timep <- interval(start = dt.raw$`Date Last Procedure`, end = dt.raw$`Date Last F/U`)/dmonths(1)
+# 
+# # time since index
+# dt.raw$timei <- interval(start = dt.raw$`Date Index`, end = dt.raw$`Date Last F/U`)/dmonths(1)
+# 
+# # time last tja
+# dt.raw$timet <- interval(start = dt.raw$`Date Last TJA`, end = dt.raw$`Date Last F/U`)/dmonths(1)
 
 # analytical dataset ------------------------------------------------------
 
