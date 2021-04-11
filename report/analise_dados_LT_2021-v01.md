@@ -184,6 +184,9 @@ It is noticeable that, while this analysis does not give proof that there is a s
 
 ## 2-year survival rates
 
+Table 1 shows the 2-year survival rates across all covariates considered.
+In this sample surgical complications decreased the survival (log-rank p=0.038), and most events were related to the procedure of Spacer, where the median time of survival was 3.14 weeks (log-rank p=0.002).
+
 
 | Characteristic |  2-year survival  |   p   |
 |:--------------:|:-----------------:|:-----:|
@@ -215,6 +218,10 @@ It is noticeable that, while this analysis does not give proof that there is a s
 |      TJA       |  97% (93%, 100%)  |       |
 
 Table: **Table 1** Survival rates for 2-year.
+
+Although a significant difference in the status of surgery success was not detected it could be possible that there is a true association between these predictos.
+This variable had 18 missing values in the sample that were dropped from the analysis.
+Oh the other hand the effect of a surgical complication is strong enough to be detected even in the presence of 13 missing values in the sample.
 
 # Exceptions and Observations
 
