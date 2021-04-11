@@ -130,6 +130,13 @@ The follow up time of all participants was considered in the person-year at risk
 - bi-variate analyses of covariates with log-rank test
 - significance alpha = 0.05
 
+Demographic characteristics were described with median and IQR or proportions, where appropriate.
+Kaplan-Meier curves were computed for the at-risk study population for the event of interest.
+For all covariates considered the 2-year survival rates were computed for the event of interest.
+The all-cause mortality was assessed using the competing risks overall figure.
+Bi-variate analyses were performed using the log-rank test for all covariates considered.
+All statistical analyses considered the significance level of 5%.
+
 ### Statistical packages
 
 This analysis was performed using statistical software `R` version 4.0.5.
