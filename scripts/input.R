@@ -22,7 +22,7 @@ dt.raw[`Death related to PJI` %in% c("Y"), ]$event <- 2
 library(lubridate)
 
 # time since PJI
-dt.raw$time <- interval(start = dt.raw$`Date PJI`, end = dt.raw$`Date Last F/U`)/dmonths(1)
+dt.raw$time <- interval(start = dt.raw$`Date PJI`, end = dt.raw$`Date Last F/U`)/dyears(1)
 
 # # time since last procedure
 # dt.raw$timep <- interval(start = dt.raw$`Date Last Procedure`, end = dt.raw$`Date Last F/U`)/dmonths(1)

@@ -2,7 +2,7 @@
 
 library(survminer)
 
-xlabel <- "Time (months)"
+xlabel <- "Time (years)"
 pval.coord <- c(150, 0.10)
 
 # main figure -------------------------------------------------------------
