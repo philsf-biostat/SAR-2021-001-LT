@@ -151,5 +151,33 @@ Fig 8: Mortality under presence of surgical complication.
 <!-- Fig 9: Mortality by complication type. -->
 
 
+|Characteristic |1-year survival   |2-year survival   |p     |
+|:--------------|:-----------------|:-----------------|:-----|
+|Overall        |96% (91%, 100%)   |92% (85%, 100%)   |      |
+|sex            |                  |                  |0.275 |
+|f              |100% (100%, 100%) |93% (85%, 100%)   |      |
+|m              |90% (79%, 100%)   |90% (79%, 100%)   |      |
+|sirs           |                  |                  |0.056 |
+|N              |100% (100%, 100%) |97% (92%, 100%)   |      |
+|Y              |85% (67%, 100%)   |77% (57%, 100%)   |      |
+|joint          |                  |                  |0.703 |
+|Hip            |96% (89%, 100%)   |92% (83%, 100%)   |      |
+|Knee           |96% (89%, 100%)   |92% (82%, 100%)   |      |
+|surg.success   |                  |                  |0.060 |
+|failure        |93% (80%, 100%)   |84% (67%, 100%)   |      |
+|success        |100% (100%, 100%) |100% (100%, 100%) |      |
+|surg.type      |                  |                  |0.002 |
+|Amputation     |100% (100%, 100%) |— (—, —)          |      |
+|Arthrodesis    |100% (100%, 100%) |100% (100%, 100%) |      |
+|Exarticulation |100% (100%, 100%) |100% (100%, 100%) |      |
+|Girdlestone    |100% (100%, 100%) |67% (30%, 100%)   |      |
+|Spacer         |50% (19%, 100%)   |50% (19%, 100%)   |      |
+|TJA            |100% (100%, 100%) |97% (93%, 100%)   |      |
+|multigerm      |                  |                  |0.938 |
+|N              |98% (93%, 100%)   |92% (84%, 100%)   |      |
+|Y              |92% (77%, 100%)   |92% (77%, 100%)   |      |
+|complication   |                  |                  |0.038 |
+|N              |100% (100%, 100%) |100% (100%, 100%) |      |
+|Y              |92% (81%, 100%)   |82% (68%, 100%)   |      |
 
-<!-- Table: **Table 2** Optional version of Table 1, adding 1-year survival rates. -->
+Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.

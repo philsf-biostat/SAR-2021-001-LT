@@ -138,7 +138,7 @@ Fig 8: Mortality under presence of surgical complication.
 <!-- Fig 9: Mortality by complication type. -->
 
 ```{r tab2, message=FALSE, warning=FALSE}
-# tbl.1.2.yr
+kable(tbl_km2)
 ```
 
-<!-- Table: **Table 2** Optional version of Table 1, adding 1-year survival rates. -->
+Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.

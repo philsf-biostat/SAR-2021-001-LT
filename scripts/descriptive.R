@@ -45,3 +45,12 @@ tbl_km <- tbl.2.yr$table_body %>% select(
   )
 tbl_km$p <- style_pvalue(tbl_km$p, digits = pval.size)
 tbl_km <- replace_na(tbl_km, list("2-year survival"="", p=""))
+
+tbl_km2 <- tbl.1.2.yr$table_body %>% select(
+  Characteristic = "label",
+  "1-year survival"= "stat_1",
+  "2-year survival"= "stat_2",
+  p = "p.value"
+)
+tbl_km2$p <- style_pvalue(tbl_km2$p, digits = pval.size)
+tbl_km2 <- replace_na(tbl_km2, list("1-year survival"="", "2-year survival"="", p=""))
