@@ -24,12 +24,13 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 - Download
 <!-- - [Download][pdf-v01] -->
 
-<!-- **Versão 02 - Defesa** - [Em elaboração][milestone-posqual]. -->
+**Version 02** - [Ongoing][milestone-v02].
 
-<!-- [Planejamento][v02-project]. -->
+[Planning][v02-project].
 
-<!-- - [Visualização online][reportviz-v02] -->
-<!-- - Download -->
+- [Online visualization][reportviz-v02]
+- Download
+<!-- - [Download][pdf-v02] -->
 
 [releases]: https://github.com/philsf-biostat/analise_dados_LT_2021/releases/
 [milestone-v01]: https://github.com/philsf-biostat/analise_dados_LT_2021/milestone/1
@@ -38,8 +39,9 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 [pdf-v01]: report/analise_dados_LT_2021-v01.pdf?raw=true
 [v01-project]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/1
 
-<!-- [milestone-v02]: https://github.com/philsf-biostat/analise_dados_LT_2021/milestone/xxx -->
-<!-- [reportviz-v02]: report/analise_dados_LT_2021-v02.md -->
-<!-- [docx-v02]: report/analise_dados_LT_2021-v02.docx?raw=true -->
-<!-- [v02-project]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/xxx -->
+[milestone-v02]: https://github.com/philsf-biostat/analise_dados_LT_2021/milestone/xxx
+[reportviz-v02]: report/analise_dados_LT_2021-v02.md
+[docx-v02]: report/analise_dados_LT_2021-v02.docx?raw=true
+[pdf-v02]: report/analise_dados_LT_2021-v02.pdf?raw=true
+[v02-project]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/xxx
 
