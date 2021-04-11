@@ -210,7 +210,7 @@ Fig 3: Mortality by Sex.
 ![](../figures/sirs.png)
 Fig 4: Mortality by SIRS.
 
-![](../figures/joint.png)
+![](../figures/Joint.png)
 Fig 5: Mortality by joint.
 
 ![](../figures/surg_success.png)

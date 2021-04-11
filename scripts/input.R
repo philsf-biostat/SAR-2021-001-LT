@@ -50,7 +50,7 @@ dtmin <- dt.raw[, .(
   time,# timep, timei, timet,
   event,
   death,
-  joint=factor(`Joint komb.`),
+  Joint=factor(`Joint komb.`),
   Complication=factor(COMPLICATION),
   # comp.type=factor(`TYPE Complication`),
   sirs=factor(SIRS),

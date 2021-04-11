@@ -42,12 +42,12 @@ gg.Complication <- ggsurvplot(
   ggtitle("Survival given Complications") +
   xlab(xlabel)
 
-gg.joint <- ggsurvplot(
-  survfit(se ~ joint, dtmin),
+gg.Joint <- ggsurvplot(
+  survfit(se ~ Joint, dtmin),
   dtmin,
   pval = TRUE, pval.coord = pval.coord, pval.size = pval.size
   ) +
-  ggtitle("Survival by operated joint") +
+  ggtitle("Survival by operated Joint") +
   xlab(xlabel)
 
 gg.surg.success <- ggsurvplot(

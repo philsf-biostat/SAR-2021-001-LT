@@ -32,8 +32,8 @@ ggsave(
   )
 
 ggsave(
-  filename = "figures/joint.png",
-  plot = print(gg.joint),
+  filename = "figures/Joint.png",
+  plot = print(gg.Joint),
   width = width, height = height
   )
 

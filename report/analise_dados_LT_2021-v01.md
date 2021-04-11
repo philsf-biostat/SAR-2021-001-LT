@@ -178,7 +178,7 @@ Fig 2: Mortality confirmed to be caused by PJI.
 |      sirs      |                   | 0.056 |
 |       N        |  97% (92%, 100%)  |       |
 |       Y        |  77% (57%, 100%)  |       |
-|     joint      |                   | 0.703 |
+|     Joint      |                   | 0.703 |
 |      Hip       |  92% (83%, 100%)  |       |
 |      Knee      |  92% (82%, 100%)  |       |
 |  surg.success  |                   | 0.060 |
@@ -221,7 +221,7 @@ Fig 3: Mortality by Sex.
 ![](../figures/sirs.png)
 Fig 4: Mortality by SIRS.
 
-![](../figures/joint.png)
+![](../figures/Joint.png)
 Fig 5: Mortality by joint.
 
 ![](../figures/surg_success.png)
@@ -248,7 +248,7 @@ Fig 8: Mortality under presence of surgical complication.
 |      sirs      |                   |                   | 0.056 |
 |       N        | 100% (100%, 100%) |  97% (92%, 100%)  |       |
 |       Y        |  85% (67%, 100%)  |  77% (57%, 100%)  |       |
-|     joint      |                   |                   | 0.703 |
+|     Joint      |                   |                   | 0.703 |
 |      Hip       |  96% (89%, 100%)  |  92% (83%, 100%)  |       |
 |      Knee      |  96% (89%, 100%)  |  92% (82%, 100%)  |       |
 |  surg.success  |                   |                   | 0.060 |

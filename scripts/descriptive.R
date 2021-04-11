@@ -24,7 +24,7 @@ library(gtsummary)
 list_sf <- list(sf.1,
                 sf.Sex,
                 sf.sirs,
-                sf.joint,
+                sf.Joint,
                 sf.surg.success,
                 sf.surg.type,
                 sf.multigerm,
@@ -32,7 +32,7 @@ list_sf <- list(sf.1,
                 # sf.comp.type
 )
 
-# tbl_survfit(dtmin, y = Surv(time, event), include = c(Sex, sirs, joint, surg.success, surg.type, multigerm, Complication), times= c(12, 24)) %>% add_p()
+# tbl_survfit(dtmin, y = Surv(time, event), include = c(Sex, sirs, Joint, surg.success, surg.type, multigerm, Complication), times= c(12, 24)) %>% add_p()
 tbl.2.yr <- tbl_survfit(list_sf, times = c(2)) %>% add_p()
 tbl.1.2.yr <- tbl_survfit(list_sf, times = c(1, 2)) %>% add_p()
 
