@@ -72,6 +72,7 @@ subtitle: 'REPORT: analise_dados_LT_2021-v01'
 
 
 This analysis was performed using statistical software `R` version 4.0.5.
+Packages used for survival analyses were `survival` version 3.2.10 and `survminer` version 0.4.9.
 
 # Results
 

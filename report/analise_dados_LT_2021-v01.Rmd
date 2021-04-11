@@ -85,6 +85,7 @@ source("scripts/results.R", encoding = 'UTF-8')
 ```
 
 This analysis was performed using statistical software `R` version `r getRversion()`.
+Packages used for survival analyses were `survival` version `r packageVersion("survival")` and `survminer` version `r packageVersion("survminer")`.
 
 # Results
 
