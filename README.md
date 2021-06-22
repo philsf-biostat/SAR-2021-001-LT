@@ -24,7 +24,7 @@ Survival analysis of events attributed to PJI in patients that undergone TJA sur
 <!-- - Download -->
 <!-- <\!-- - [Download][pdf-v02] -\-> -->
 
-**Version 01** - [Ongoing][milestone-v01].
+**Version 01** - [Concluded][milestone-v01].
 
 [Planning][v01-project].
 
