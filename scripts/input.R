@@ -1,6 +1,6 @@
 library(readxl)
 library(data.table)
-dt.raw <- read_excel("dataset/2021-02-12 Edit_LUcio_ von 210207 Data PJI Westerholt.xlsx", na = c("NA", "t.b.d."))
+dt.raw <- read_excel("dataset/2021-02-12 Edit_LUcio_ von 210207 Data PJI Westerholt.xlsx", na = c("NA", "t.b.d.", "unknown"))
 dt.raw <- data.table(dt.raw)
 
 # data cleaning -----------------------------------------------------------
