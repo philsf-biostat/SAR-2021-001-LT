@@ -1,6 +1,6 @@
-# Survival analysis of PJI related deaths after TJA (Helios Klinikum Berlin-Buch, 2021)
+# Survival analysis of events attributed to PJI in patients that undergone TJA surgeries
 
-Survival analysis of events attributed to PJI in patients that undergone TJA surgeries
+Statistical analysis of PJI related deaths after TJA (Helios Klinikum Berlin-Buch, 2021)
 
 ## Analyses performed
 
