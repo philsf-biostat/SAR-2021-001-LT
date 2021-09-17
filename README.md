@@ -40,15 +40,15 @@ https://philsf-biostat.github.io/
 
 [sapviz-v01]: report/SAP-2021-001-LT-v01.md
 [sapviz-v02]: report/SAP-2021-001-LT-v02.md
-[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAP-2021-001-LT-v01.pdf
-[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAP-2021-001-LT-v02.pdf
+[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/master/report/SAP-2021-001-LT-v01.pdf
+[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/master/report/SAP-2021-001-LT-v02.pdf
 
 [reportviz-v01]: report/SAR-2021-001-LT-v01.md
 [reportviz-v02]: report/SAR-2021-001-LT-v02.md
-[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v01.pdf
-[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v02.pdf
-[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v01.docx
-[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v02.docx
+[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/master/report/SAR-2021-001-LT-v01.pdf
+[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/master/report/SAR-2021-001-LT-v02.pdf
+[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/master/report/SAR-2021-001-LT-v01.docx
+[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/master/report/SAR-2021-001-LT-v02.docx
 
 [releases]: https://github.com/philsf-biostat/SAR-2021-001-LT/releases/
 [milestone-v01]: https://github.com/philsf-biostat/SAR-2021-001-LT/milestone/mmm01
