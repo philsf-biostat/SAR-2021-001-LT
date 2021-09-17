@@ -1,5 +1,6 @@
 library(readxl)
 library(data.table)
+library(dplyr)
 dt.raw <- read_excel("dataset/2021-02-12 Edit_LUcio_ von 210207 Data PJI Westerholt.xlsx", na = c("NA", "t.b.d.", "unknown"))
 dt.raw <- data.table(dt.raw)
 
@@ -64,3 +65,8 @@ summary(dt.raw[, .(`Date PJI`, `Date Last F/U`, `Date Index`, `Date Last Procedu
 
 # dtmin <- dtmin[death != "Other"]
 # dtmin <- dtmin[death != "PJI"]
+
+analytical_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(nrow(dtmin)) ) ) %>%
+  left_join(dtmin %>% head(0), by = "id") %>%
+  mutate_all(as.character) %>%
+  replace(is.na(.), "")
