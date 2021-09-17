@@ -1,7 +1,8 @@
 ---
 title: "Survival analysis of events attributed to PJI in patients that undergone TJA surgeries"
+subtitle: 'DOCUMENT: SAR-2021-001-LT-v01'
 author: '**From:** Felipe Figueiredo **To:** Lucio Toledo'
-date: '**Date: ** 2021-04-11'
+date: '**Date:** 2021-04-11'
 output:
   html_document:
     fig_caption: yes
@@ -10,16 +11,15 @@ output:
     keep_md: yes
     number_sections: yes
     toc: yes
+  pdf_document:
+    number_sections: yes
+    toc: yes
   word_document:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
-    reference_docx: misc/style.docx
+    reference_docx: misc/style_SAR_en.docx
     toc: yes
-  pdf_document:
-    number_sections: yes
-    toc: yes
-subtitle: 'REPORT: analise_dados_LT_2021-v01'
 # toc-title: "Sumário"
 ---
 
@@ -31,14 +31,14 @@ library(pander)
 library(knitr)
 library(philsfmisc)
 panderOptions('table.style', 'rmarkdown')
-panderOptions('table.split.table', Inf)
+panderOptions('table.split.table', 160)
 ```
 
 ---
 
 **Document version**
 
-```{r, echo = FALSE}
+```{r history}
 Version <- c("01")
 Changes <- c("Initial version")
 history <- cbind(Version, Changes)
@@ -48,29 +48,6 @@ kable(history)
 ```
 
 ---
-
-<!-- # Signatures -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Nome", "Função", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- # pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- kable(sigs) -->
-<!-- ``` -->
 
 # Abbreviations
 
@@ -108,7 +85,7 @@ It was dropped.
 
 # Methods
 
-```{r analysis, include=FALSE}
+```{r results, include=FALSE}
 source("scripts/results.R", encoding = 'UTF-8')
 ```
 
@@ -155,8 +132,8 @@ All statistical analyses considered the significance level of 5%.
 
 ### Statistical packages
 
-This analysis was performed using statistical software `R` version `r getRversion()`.
-Packages used for survival analyses were `survival` version `r packageVersion("survival")` and `survminer` version `r packageVersion("survminer")`.
+This analysis was performed using statistical software `R` version 4.0.5.
+Packages used for survival analyses were `survival` version 3.2.10 and `survminer` version 0.4.9.
 
 # Results
 
@@ -202,10 +179,8 @@ Table 1 shows the 2-year survival rates across all covariates considered.
 In this sample surgical complications decreased the survival (log-rank p=0.038), and most events were related to the procedure of Spacer, where the median time of survival was 3.14 weeks (log-rank p=0.002).
 
 ```{r tab1, message=FALSE, warning=FALSE}
-pander(tbl_km)
+tbl_km %>% kable(align = "ccc", caption = "**Table 1** Survival rates for 2-year.")
 ```
-
-Table: **Table 1** Survival rates for 2-year.
 
 Although a significant difference in the status of surgery success was not detected it could be possible that there is a true association between these predictos.
 This variable had 18 missing values in the sample that were dropped from the analysis.
@@ -214,7 +189,6 @@ Oh the other hand the effect of a surgical complication is strong enough to be d
 # Exceptions and Observations
 
 # Conclusions
-
 
 # References
 
@@ -226,26 +200,40 @@ Oh the other hand the effect of a surgical complication is strong enough to be d
 <!-- ggarrange(gg.sex$plot, gg.sirs$plot, gg.joint$plot, gg.stat.tja$plot, gg.outcome$plot, gg.comp$plot, labels = "AUTO", ncol = 2, nrow = 3) -->
 <!-- ``` -->
 
-![](../figures/Sex.png)
-**Figure 3** Mortality by Sex.
+```{r A1, fig.cap="**Figure A1** Mortality by Sex."}
+# ![](../figures/Sex.png)
+knitr::include_graphics("../figures/Sex.png", error = FALSE)
+```
 
-![](../figures/Joint.png)
-**Figure 4** Mortality by joint.
+```{r A2, fig.cap="**Figure A2** Mortality by joint."}
+# ![](../figures/Joint.png)
+knitr::include_graphics("../figures/Joint.png", error = FALSE)
+```
 
-![](../figures/Complication.png)
-**Figure 5** Mortality under presence of surgical complication.
+```{r A3, fig.cap="**Figure A3** Mortality under presence of surgical complication."}
+# ![](../figures/Complication.png)
+knitr::include_graphics("../figures/Complication.png", error = FALSE)
+```
 
-![](../figures/Multigerm.png)
-**Figure 6** Mortality by Multi-germ.
+```{r A4, fig.cap="**Figure A4** Mortality by Multi-germ."}
+# ![](../figures/Multigerm.png)
+knitr::include_graphics("../figures/Multigerm.png", error = FALSE)
+```
 
-![](../figures/SIRS.png)
-**Figure 7** Mortality by SIRS.
+```{r A5, fig.cap="**Figure A5** Mortality by SIRS."}
+# ![](../figures/SIRS.png)
+knitr::include_graphics("../figures/SIRS.png", error = FALSE)
+```
 
-![](../figures/surg_success.png)
-**Figure 8** mortality by status of the TJA.
+```{r A6, fig.cap="**Figure A6** mortality by status of the TJA."}
+# ![](../figures/surg_success.png)
+knitr::include_graphics("../figures/surg_success.png", error = FALSE)
+```
 
-![](../figures/surg_type.png)
-**Figure 9** Mortality by surgery outcome.
+```{r A7, fig.cap="**Figure A7** Mortality by surgery outcome."}
+# ![](../figures/surg_type.png)
+knitr::include_graphics("../figures/surg_type.png", error = FALSE)
+```
 
 <!-- ![](../figures/comp_type.png) -->
 <!-- Fig 9: Mortality by complication type. -->
@@ -253,15 +241,32 @@ Oh the other hand the effect of a surgical complication is strong enough to be d
 ## Alternative results table
 
 ```{r tab2, message=FALSE, warning=FALSE}
-pander(tbl_km2)
+tbl_km2 %>%
+  kable(align = "cccc",
+    caption = "**Table 2** Optional version of Table 1, adding 1-year survival rates."
+  )
 ```
 
-Table: **Table 2** Optional version of Table 1, adding 1-year survival rates.
 
-## Analytical data-set
+
+
+## Availability
+
+<!-- Both this document and the corresponding analytical plan (**SAP-2021-001-LT-v01**) can be downloaded in the following address: -->
+
+This document can be downloaded in the following address:
+
+https://github.com/philsf-biostat/SAR-2021-001-LT/
+
+## Analytical dataset
 
 Due to confidentiality the data-set used in this analysis cannot be shared online in the public version of this report.
 
 ```{r data}
-# pander(dtmin)
+# print analytical of analytical_mockup whether it is the private or public version of the SAR
+
+# analytical %>%
+#   pander(caption = "**Table A1** Analytical dataset")
+analytical_mockup %>%
+  pander(caption = "**Table A1** Analytical dataset structure")
 ```
