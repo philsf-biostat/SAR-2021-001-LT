@@ -1,47 +1,57 @@
 # Survival analysis of events attributed to PJI in patients that undergone TJA surgeries
 
+Perform a Kaplan-Meier survival analysis on the deaths caused by PJI after a TJA surgical procedure.
+Additionally, explore possible risk factor for PJI mortality in bi-variate analyses.
+
 Statistical analysis of PJI related deaths after TJA (Helios Klinikum Berlin-Buch, 2021)
 
 ## Analyses performed
 
-1. Kaplan-Meier Analysis ([Planning][proj-v01])
-<!-- 2. yyy ([Planning][proj-yyy]) -->
-<!-- 3. zzz ([Planning][proj-zzz]) -->
+1. Descriptive analysis
+1. Inferential analysis
+1. Survival Analysis
 
-[proj-v01]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/1
-[proj-yyy]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/yyy
-[proj-zzz]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/zzz
+## Documents
 
-## Analysis report
+### Analytical Plan (SAP)
 
-[View the releases][releases].
+<!-- - [Online visualization][sapviz-v02] -->
+<!-- - [Download][sappdf-v02] -->
 
-<!-- **Version 02** - [Ongoing][milestone-v02]. -->
+- [Online visualization][sapviz-v01]
+- [PDF][sappdf-v01]
 
-<!-- [Planning][v02-project]. -->
+### Statistical Analysis Report (SAR)
 
 <!-- - [Online visualization][reportviz-v02] -->
-<!-- - Download -->
-<!-- <\!-- - [Download][pdf-v02] -\-> -->
-
-**Version 01** - [Concluded][milestone-v01].
-
-[Planning][v01-project].
+<!-- - [Download][pdf-v02] -->
 
 - [Online visualization][reportviz-v01]
-- [Download][pdf-v01]
-<!-- - Download -->
+- [PDF][pdf-v01]
 
-[releases]: https://github.com/philsf-biostat/analise_dados_LT_2021/releases/
-[milestone-v01]: https://github.com/philsf-biostat/analise_dados_LT_2021/milestone/1
-[reportviz-v01]: report/analise_dados_LT_2021-v01.md
-[docx-v01]: report/analise_dados_LT_2021-v01.docx?raw=true
-[pdf-v01]: report/analise_dados_LT_2021-v01.pdf?raw=true
-[v01-project]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/1
+## Portfolio
 
-[milestone-v02]: https://github.com/philsf-biostat/analise_dados_LT_2021/milestone/xxx
-[reportviz-v02]: report/analise_dados_LT_2021-v02.md
-[docx-v02]: report/analise_dados_LT_2021-v02.docx?raw=true
-[pdf-v02]: report/analise_dados_LT_2021-v02.pdf?raw=true
-[v02-project]: https://github.com/philsf-biostat/analise_dados_LT_2021/projects/xxx
+This analysis is included in the consultant's portfolio.
+Other analyses performed can also be seen at:
 
+https://philsf-biostat.github.io/
+
+<!-- --- -->
+
+[sapviz-v01]: report/SAP-2021-001-LT-v01.md
+[sapviz-v02]: report/SAP-2021-001-LT-v02.md
+[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAP-2021-001-LT-v01.pdf
+[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAP-2021-001-LT-v02.pdf
+
+[reportviz-v01]: report/SAR-2021-001-LT-v01.md
+[reportviz-v02]: report/SAR-2021-001-LT-v02.md
+[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v01.pdf
+[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v02.pdf
+[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v01.docx
+[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2021-001-LT/raw/main/report/SAR-2021-001-LT-v02.docx
+
+[releases]: https://github.com/philsf-biostat/SAR-2021-001-LT/releases/
+[milestone-v01]: https://github.com/philsf-biostat/SAR-2021-001-LT/milestone/mmm01
+[v01-project]: https://github.com/philsf-biostat/SAR-2021-001-LT/projects/ppp01
+[milestone-v02]: https://github.com/philsf-biostat/SAR-2021-001-LT/milestone/mmm02
+[v02-project]: https://github.com/philsf-biostat/SAR-2021-001-LT/projects/ppp02
